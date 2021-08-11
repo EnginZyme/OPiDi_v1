@@ -21,12 +21,6 @@ Further, the user can save changes made to a protocol, clone that protocol, or d
 
 The web app depends on the [protocol objects API](https://gitlab.com/enginzyme-public/protocol-objects-api) for persistence and CRUD operations on created protocols and protocol dependencies such as labware, and pipette data. The protocol objects API sits a-top a protocol objects DB (provisioned as an AWS RDS instance).
 The web app also depends on the [Opentrons protocol generator service](https://gitlab.com/enginzyme-public/opentrons-protocol-generator) to either simulate protocol specifications sent from the web app, or to generate the Opentrons robot specific equivalent of the protocol.
-For our purposes, some user activity is logged and tracked on [AWS CloudWatch](https://eu-north-1.console.aws.amazon.com/cloudwatch/home?region=eu-north-1#logsV2:log-groups/log-group/ProtocolDesignerSPA-test/log-events/UserActivity). Such activity include:
-- Creating a protocol
-- Cloning a protocol
-- Deleting a protocol
-- Simulating a protocol
-- Generating the corresponding robot platform specific protocol file.
 
 ## Getting Started
 
@@ -73,9 +67,9 @@ $ docker compose run -d --name opidi-app -p 80:8765 web pipenv run python manage
 ```
 
 ### To Enable Google Authentication
-Follow (https://developers.google.com/identity/sign-in/web/sign-in)[this guide] to obtain your Client ID for Google federated authentication.
+Follow [this guide](https://developers.google.com/identity/sign-in/web/sign-in) to obtain your Client ID for Google federated authentication.
 
-Next, add http://localhost to the allowed Javascript origins and redirect uris lists in the Google API console.
+Next, add `http://localhost` to the allowed Javascript origins and redirect uris lists in the Google API console.
 
 Further, add the following to the head of the `client/public/index.html` file:
 ```
