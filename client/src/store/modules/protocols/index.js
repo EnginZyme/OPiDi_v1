@@ -255,15 +255,15 @@ export default {
      * @memberof actions
      */
     [types.CREATE_PROTOCOL](
-      { commit, getters, dispatch, rootGetters },
+      { commit, dispatch, rootGetters },
       metadata
     ) {
       return new Promise((resolve, reject) => {
         Axios.post(
           `${API_URL}/protocol/`,
           getDefaultProtocol(
-            getters.userName,
-            getters.userEmail,
+            rootGetters.userName,
+            rootGetters.userEmail,
             metadata.name,
             metadata.description
           ),
@@ -304,8 +304,8 @@ export default {
         let newProtocol = JSON.parse(
           JSON.stringify(getters.cachedProtocol.protocol)
         );
-        newProtocol.metadata.author.name = getters.userName;
-        newProtocol.metadata.author.email = getters.userEmail;
+        newProtocol.metadata.author.name = rootGetters.userName;
+        newProtocol.metadata.author.email = rootGetters.userEmail;
         newProtocol.metadata.is_verified = false;
         newProtocol.metadata.is_retired = false;
         newProtocol.metadata.is_shared = false;
