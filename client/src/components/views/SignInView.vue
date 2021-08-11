@@ -63,25 +63,33 @@ export default {
   },
   mounted: function() {
     // Registers a callback that is triggered when Google SSO sign-in is successful
-    console.log(process.env.VUE_APP_GOOGLE_AUTH_ENABLED)
+    console.log(process.env.VUE_APP_GOOGLE_AUTH_ENABLED);
     if (process.env.VUE_APP_GOOGLE_AUTH_ENABLED !== "TRUE") {
-      this.$store.dispatch(types.REGISTER_USER, {
-        name: "Guest Visitor",
-        email: "guest@acme.com",
-        imageURL: "https://i.pravatar.cc/150?img=50",
-        aToken: "tokenekot",
-        isLoggedIn: true,
-        tokenRefresher: () => {},
-        tokenExpiryTime: 9999999999
-      }).then(() => {
-        this.$store.dispatch(types.LOAD_PROTOCOLS);
-        this.$store.dispatch(types.LOAD_LABWARES);
-        this.$store.dispatch(types.LOAD_SLACK_WEBHOOK_OBJECTS);
-        // Redirect to "ProtocolDesignerPage"
-        this.$router.push({
-          name: "ProtocolDesignerPage",
+      this.$store
+        .dispatch(types.REGISTER_USER, {
+          name: "Guest Visitor",
+          email: "guest@acme.com",
+          imageURL: "https://i.pravatar.cc/150?img=50",
+          aToken: "tokenekot",
+          isLoggedIn: true,
+          tokenRefresher: () =>
+            new Promise((resolve) => {
+              resolve({
+                id_token: "tokenoket",
+                expires_at: 9999999999,
+              });
+            }),
+          tokenExpiryTime: 9999999999,
+        })
+        .then(() => {
+          this.$store.dispatch(types.LOAD_PROTOCOLS);
+          this.$store.dispatch(types.LOAD_LABWARES);
+          this.$store.dispatch(types.LOAD_SLACK_WEBHOOK_OBJECTS);
+          // Redirect to "ProtocolDesignerPage"
+          this.$router.push({
+            name: "ProtocolDesignerPage",
+          });
         });
-      });
     } else {
       window.gapi.load("auth2", () => {
         window.gapi.signin2.render("google-signin-button", {
