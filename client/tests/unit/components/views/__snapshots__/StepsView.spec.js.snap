@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted StepsView renders correctly 1`] = `
+<div>
+  <div
+    class="steps_view"
+  >
+    <div
+      class="steps_view__header"
+    >
+      <div
+        class="steps_view__title"
+      >
+        <span
+          class="steps_view__title__text"
+        >
+          Steps
+        </span>
+      </div>
+    </div>
+     
+    <div
+      class="steps_view__body"
+    >
+      <div
+        class="steps_view__body__main_view"
+      >
+        <div
+          class="steps_view__body__main_view__crud_button_group"
+        >
+          <button
+            aria-controls="step_menu"
+            aria-haspopup="true"
+            class="steps_view__body__main_view__crud_button_group__add_button"
+            label="Add Step +"
+          />
+           
+          <button
+            class="p-button-raised p-button-primary p-button-text"
+            icon="pi pi-copy"
+          />
+           
+          <button
+            class="p-button-raised p-button-danger p-button-text"
+            icon="pi pi-trash"
+          />
+           
+          <dialog
+            header="Confirmation"
+            modal="true"
+            position="top"
+            style="width: 420px; font-size: 15px;"
+          >
+            <div
+              class="confirmation-content"
+            >
+              <span>
+                Are you sure you want to delete the
+                
+                <b>
+                  
+                </b>
+                
+                step?
+              </span>
+            </div>
+          </dialog>
+        </div>
+         
+        <menu
+          id="step_menu"
+          model="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+          popup="true"
+        />
+         
+        <div
+          class="steps_view__body__main_view__steps_area"
+        >
+          <stepcardsview-stub
+            value="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+          />
+           
+          <br />
+        </div>
+      </div>
+       
+      <div
+        class="steps_view__body__side_panel"
+      >
+        <loopconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <pauseconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <arraytransferconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <sequencetransferconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <simpletransferconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <slackmessageconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <timerconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+         
+        <shakerconfigform-stub
+          formtype=""
+          stepid="-1"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,57 @@
+{
+    "type": liquid_config_object,
+    "description": "Liquid handling modifiers for the Opentrons transfer steps",
+    "liquid_config_object": {
+
+        "touch_tip": {
+            "type": boolean,
+            "description": "If True, a touch_tip() will occur following each aspirate() and dispense(). If set to False (default behavior), no touch_tip() will occur."
+        },
+        "air_gap": {
+            "type": float,
+            "description": "Volume [uL] of air pulled in after an aspirate step to prevent liquid dripping"
+        },
+        "blow_out": {
+            "type": boolean,
+            "description": "If True, a blow_out() will occur following each dispense(), but only if the pipette has no liquid left in it. If set to False (default), no blow_out() will occur."
+        },
+        "blowout_location": {
+            "type": string,
+            "description": "Available options are 'source well', 'destination well', and 'trash'. Default is 'destination well' "
+        },
+        "mix_before": {
+            "type": [
+                repetitions,
+                volume
+            ],
+            "description": "The tuple, if specified, gives the amount of volume to mix() preceding each aspirate() during the transfer. The tuple is interpreted as (repetitions, volume)",
+            "repetitions": {
+                "type": integer,
+                "description": "Number of times mixing is performed"
+            },
+            "volume": {
+                "type": float,
+                "description": "Volume in microliters aspirated and dispensed in a mixing action"
+            }
+        },
+        "mix_after": {
+            "type": [
+                repetitions,
+                volume
+            ],
+            "description": "The tuple, if specified, gives the amount of volume to mix() preceding each aspirate() during the transfer. The tuple is interpreted as (repetitions, volume)",
+            "repetitions": {
+                "type": integer,
+                "description": "Number of times mixing is performed"
+            },
+            "volume": {
+                "type": float,
+                "description": "Volume in microliters aspirated and dispensed in a mixing action"
+            }
+        },
+        "disposal_volume": {
+            "type": float,
+            "description": "Volume of liquid to be disposed off after distributing. When dispensing multiple times from the same tip, it is recommended to aspirate an extra amount of liquid to be disposed off after distributing."
+            "restrictions": "Set to 0. Do not display in UI. Kept for compatibility purposes"
+    }
+}

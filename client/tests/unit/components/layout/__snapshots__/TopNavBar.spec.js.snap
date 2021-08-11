@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted TopNavBar renders correctly 1`] = `
+<div>
+  <div
+    class="top_nav_bar"
+  >
+    <div
+      class="top_nav_bar__content"
+    >
+      <div />
+       
+      <appbanner-stub />
+    </div>
+  </div>
+</div>
+`;

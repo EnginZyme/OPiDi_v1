@@ -1,0 +1,65 @@
+{
+    "type": "sequence_transfer",
+    "description": "A sequence transfer step where sources, destinations and volumes are defined as sequences in the instructions object",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+            },
+    "parameters": {
+        "pipette": "left_pipette",
+        "pipette_strategy": {
+            "type": string,
+            "description": "SINGLE_CHANNEL: any single channel pipette, MULTI_CHANNEL: any multichannel pipette, SINGLE_ACCURACY: two single channel pipettes with different ranges, MULTI_ACCURACY: two multichannel pipettes with different ranges",
+            "restriction": "Consistency must be checked between the chosen pipette strategy, the chosen pipettes and the available pipettes"
+        },
+        "volumes": {
+            "type": [floats],
+            "description": "List of transfer volumes in microliters",
+            "restriction": "Number of volumes, source wells and destination wells must be submultiples of each other.  (Ex. 2 Volumes, 6 sources, 12 destinations, will transfer each volume from 3 sources to 6 destinations (2 per source)"
+        },
+        "source_sequence": {
+            "type": sequence_object,
+            "description": "Name of the locations sequence as defined in the sequences of the instructions object",
+            "restriction": "The sequence must exist in the instruction object"
+        },
+        "destination_sequence": {
+            "type": sequence_object,
+            "description": "Name of the locations sequence as defined in the sequences of the instructions object",
+            "restriction": "The sequence must exist in the instruction object"
+        },
+        "liquid_config": {
+            "type": string,
+            "description": "Reference to a Liquid Config additional options in the transfer step.",
+            "restriction": "A liquid config with the smae name must exist in the instructions object"
+        },
+        "tipsStrategy": {
+            "type": string,
+            "description": "'STANDARD': one tip per source, 'STRICT': one tip per dispense, 'ECO': reuse tip, 'ECO - NEW TIP': Forces a new tip pickup in ECO mode ",
+            "restriction": "Only 'STANDARD', 'STRICT',  'ECO' and 'ECO - NEW TIP' values are allowed"
+        },
+        "offset": {
+            "source_type": {
+                "type": string,
+                "descritption": "Defines if an offset value is measured from the top or from the bottom",
+                "default_value": 'Bottom',
+                "restriction": "Available values are Top or Bottom"
+            },
+            "source": {
+                "type": float,
+                "description": "Offset over the bottom (or under the top) of the source wells on the aspirate steps",
+                "default_value": 1
+            },
+            "destination_type": {
+                "type": string,
+                "descritption": "Defines if an offset value is measured from the top or from the bottom",
+                "default_value": 'Bottom',
+                "restriction": "Available values are Top or Bottom"
+            },
+            "destination": {
+                "type": float,
+                "description": "Offset over the bottom (or under the top) of the source wells on the aspirate steps",
+                "default_value": 1
+            }
+        }
+    }
+}

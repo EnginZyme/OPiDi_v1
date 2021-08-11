@@ -1,0 +1,34 @@
+\hypertarget{namespaceopentrons__transpiler}{}\doxysection{opentrons\+\_\+transpiler Namespace Reference}
+\label{namespaceopentrons__transpiler}\index{opentrons\_transpiler@{opentrons\_transpiler}}
+
+
+Main Transpiler code-\/loop running pre-\/ and post-\/ protocol steps, and iterating through all user defined steps stored in the instructions file.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceopentrons__transpiler_a226f29ea765512fd2a17ff968ce5b342}\label{namespaceopentrons__transpiler_a226f29ea765512fd2a17ff968ce5b342}} 
+def {\bfseries match\+\_\+sequences} (seq\+\_\+a, seq\+\_\+b, seq\+\_\+c)
+\begin{DoxyCompactList}\small\item\em Matching the sequences length, only works if the sequences are sub-\/multiples of the longest sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__transpiler_ad90c294653ace2204abc328a220f59af}\label{namespaceopentrons__transpiler_ad90c294653ace2204abc328a220f59af}} 
+def {\bfseries run} (protocol\+\_\+api.\+Protocol\+Context protocol)
+\begin{DoxyCompactList}\small\item\em The main run loop, see the main page for more in depth information on how the transpiler architecture looks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceopentrons__transpiler_a6fe07282a6e67e6a4a8a21dfa282de5d}\label{namespaceopentrons__transpiler_a6fe07282a6e67e6a4a8a21dfa282de5d}} 
+dictionary {\bfseries metadata} = \{\textquotesingle{}api\+Level\textquotesingle{}\+: \textquotesingle{}2.\+3\textquotesingle{}, \char`\"{}transpiler\+\_\+version\char`\"{}\+: \char`\"{}210214\char`\"{}\}
+\begin{DoxyCompactList}\small\item\em General Settings for the protocol. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__transpiler_aba8e32df0219dc28ab836114f5cf53ba}\label{namespaceopentrons__transpiler_aba8e32df0219dc28ab836114f5cf53ba}} 
+bool {\bfseries IS\+\_\+\+SIMULATING} = True
+\begin{DoxyCompactList}\small\item\em Flag set once and provided globally to functions that can only run code when not is\+\_\+simulating. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__transpiler_abd43ff1184d1f802319ef08102db7cc6}\label{namespaceopentrons__transpiler_abd43ff1184d1f802319ef08102db7cc6}} 
+string {\bfseries TRANSPILER\+\_\+\+VERSION} = \char`\"{}2.\+3.\+0\char`\"{}
+\begin{DoxyCompactList}\small\item\em Current version of this transpiler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main Transpiler code-\/loop running pre-\/ and post-\/ protocol steps, and iterating through all user defined steps stored in the instructions file. 
+
+Initialises required classes, and handles major step exceptions 

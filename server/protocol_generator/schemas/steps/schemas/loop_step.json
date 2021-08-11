@@ -1,0 +1,17 @@
+{
+    "type": "loop",
+    "description": "A container for steps that need to be repeated",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+    },
+    "num_iterations": {
+        "type": integer,
+        "description": "Number of times that the substeps will be executed",
+        "restrictions": "Positive integer"
+    },
+    "substeps": {
+        "type": [step_objects],
+        "description": "A list of steps. The steps arrangement within the list defines the execution order"
+    }
+}

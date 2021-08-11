@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ArrayTransferConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Array Transfer
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Step Name
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          Pipette
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown"
+          optionlabel="name"
+          options="[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Tips Strategy
+        
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown"
+          optionlabel="name"
+          options="[object Object],[object Object],[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Liquid Class
+        
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown"
+          optionlabel="name"
+          options="[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Source Offset
+        
+        </p>
+         
+        <div
+          class="step_config_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              Type
+            </p>
+             
+            <dropdown
+              class="step_config_form__body__content__dropdown"
+              optionlabel="name"
+              options="[object Object],[object Object]"
+              placeholder="Select option"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              
+              Value (mm)
+            
+            </p>
+             
+            <inputnumber
+              class="step_config_form__body__content__input--short"
+              maxfractiondigits="5"
+              minfractiondigits="2"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Destination Offset
+        
+        </p>
+         
+        <div
+          class="step_config_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              Type
+            </p>
+             
+            <dropdown
+              class="step_config_form__body__content__dropdown"
+              optionlabel="name"
+              options="[object Object],[object Object]"
+              placeholder="Select option"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              
+              Value (mm)
+            
+            </p>
+             
+            <inputnumber
+              class="step_config_form__body__content__input--short"
+              maxfractiondigits="5"
+              minfractiondigits="2"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Array Map Filename
+        
+        </p>
+         
+        <div
+          class="step_config_form__body__content__file_group"
+        >
+          <inputtext
+            class="step_config_form__body__content__input--stretch"
+            readonly="readonly"
+          />
+           
+          <button
+            class="step_config_form__body__content__file_upload_button"
+            for="uploadmyfile"
+            label="Browse"
+          />
+           
+          <input
+            accept=".csv"
+            id="uploadArrayMapFile"
+            type="file"
+          />
+        </div>
+      </div>
+       
+      <a
+        class="step_config_form__body__content__file_hyperlink"
+        download=""
+        href="/assets/array_map_template_simplified.xlsx"
+      >
+        Download Template
+      </a>
+       
+      <button
+        class="step_config_form__body__content__colour_button p-button-raised p-button-success"
+        label="Update Array Mapping"
+      />
+    </div>
+  </div>
+   
+  <arraymapform-stub
+    pipette="[object Object]"
+    stepid="8"
+  />
+</div>
+`;

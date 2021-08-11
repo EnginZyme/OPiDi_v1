@@ -1,0 +1,15 @@
+{
+    "type": "slack_webhook",
+    "description": "Webhook URL, the address that identifies a specific channel in a slack workgroup",
+    "channel_name": {
+        "type": string,
+        "description": "Slack channel name. Useful to use as key to map the webhooks in a webinterface"
+    },
+    "message": {
+        "type": string,
+        "description": "Text Message "
+    },
+    "alert_user": {
+        "type"
+    }
+}

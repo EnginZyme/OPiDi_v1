@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted AuthenticationPage renders correctly 1`] = `
+<div
+  class="sign_in_card"
+>
+  <signinview-stub />
+</div>
+`;

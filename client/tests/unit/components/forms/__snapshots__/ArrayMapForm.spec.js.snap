@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ArrayMapForm renders correctly 1`] = `
+<dialog
+  header="Array Mapping"
+  modal="true"
+  style="width: 50vw; min-width: 900px;"
+  visible="visible"
+>
+  <br />
+   
+  <div
+    class="array_map_form"
+  >
+    <panel
+      header="Sources"
+    >
+      <div
+        class="array_map_form__nested_form"
+      >
+        <div
+          class="array_map_form__nested_form__source_variable_entry"
+        >
+          <div>
+            <p
+              class="array_map_form__nested_form__source_variable_entry__name"
+            >
+              
+              buffer 1
+            
+            </p>
+             
+            <p
+              class="array_map_form__nested_form__source_variable_entry__well_count"
+            >
+              
+               [1 well(s)]
+            
+            </p>
+          </div>
+           
+          <dropdown
+            class="array_map_form__nested_form__labware_slot_dropdown"
+            optionlabel="display_name"
+            options="[object Object],[object Object],[object Object]"
+            placeholder="Select Labware Slot"
+            value="[object Object]"
+          />
+           
+          <button
+            class="array_map_form__nested_form__source_variable_entry__button p-button-raised p-button-success"
+            label="Update Wells"
+          />
+           
+          <!---->
+        </div>
+        <div
+          class="array_map_form__nested_form__source_variable_entry"
+        >
+          <div>
+            <p
+              class="array_map_form__nested_form__source_variable_entry__name"
+            >
+              
+              buffer 2
+            
+            </p>
+             
+            <p
+              class="array_map_form__nested_form__source_variable_entry__well_count"
+            >
+              
+               [1 well(s)]
+            
+            </p>
+          </div>
+           
+          <dropdown
+            class="array_map_form__nested_form__labware_slot_dropdown"
+            optionlabel="display_name"
+            options="[object Object],[object Object],[object Object]"
+            placeholder="Select Labware Slot"
+            value="[object Object]"
+          />
+           
+          <button
+            class="array_map_form__nested_form__source_variable_entry__button p-button-raised p-button-success"
+            label="Update Wells"
+          />
+           
+          <!---->
+        </div>
+        <div
+          class="array_map_form__nested_form__source_variable_entry"
+        >
+          <div>
+            <p
+              class="array_map_form__nested_form__source_variable_entry__name"
+            >
+              
+              water
+            
+            </p>
+             
+            <p
+              class="array_map_form__nested_form__source_variable_entry__well_count"
+            >
+              
+               [1 well(s)]
+            
+            </p>
+          </div>
+           
+          <dropdown
+            class="array_map_form__nested_form__labware_slot_dropdown"
+            optionlabel="display_name"
+            options="[object Object],[object Object],[object Object]"
+            placeholder="Select Labware Slot"
+            value="[object Object]"
+          />
+           
+          <button
+            class="array_map_form__nested_form__source_variable_entry__button p-button-raised p-button-success"
+            label="Update Wells"
+          />
+           
+          <!---->
+        </div>
+      </div>
+    </panel>
+     
+    <panel
+      header="Destinations"
+    >
+      <div
+        class="array_map_form__nested_form"
+      >
+        <div
+          class="array_map_form__nested_form__destination_variable_entry"
+        >
+          <span>
+            destination_plate
+          </span>
+           
+          <dropdown
+            class="array_map_form__nested_form__labware_slot_dropdown"
+            optionlabel="display_name"
+            options="[object Object],[object Object],[object Object]"
+            placeholder="Select Labware Slot"
+            value="[object Object]"
+          />
+        </div>
+      </div>
+    </panel>
+  </div>
+</dialog>
+`;

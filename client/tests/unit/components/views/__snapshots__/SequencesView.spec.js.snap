@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted SequencesView renders correctly 1`] = `
+<div>
+  <div
+    class="sequences_view"
+  >
+    <div
+      class="sequences_view__sequences_view__body__main_view__content__header"
+    >
+      <div
+        class="sequences_view__sequences_view__body__main_view__content__header__title"
+      >
+        <span
+          class="sequences_view__sequences_view__body__main_view__content__header__title__text"
+        >
+          Sequences
+        </span>
+      </div>
+    </div>
+     
+    <div
+      class="sequences_view__body"
+    >
+      <div
+        class="sequences_view__body__side_panel"
+      >
+        <button
+          class="p-button-text sequences_view__body__side_panel__small_font"
+          label="Location Sequences"
+        />
+      </div>
+       
+      <div
+        class="sequences_view__body__main_view"
+      >
+        <div
+          class="sequences_view__body__main_view__content"
+        >
+          <p
+            class="sequences_view__body__main_view__content__header"
+          >
+            
+            Location Sequences
+          
+          </p>
+           
+          <div
+            class="sequences_view__body__main_view__content__crud_button_group"
+          >
+            <button
+              class="sequences_view__body__main_view__content__crud_button_group__add_button"
+              label="Add Sequence +"
+            />
+             
+            <button
+              class="p-button-raised p-button-primary p-button-text"
+              icon="pi pi-copy"
+            />
+             
+            <button
+              class="p-button-raised p-button-danger p-button-text"
+              icon="pi pi-trash"
+            />
+             
+            <dialog
+              header="Confirmation"
+              modal="true"
+              position="top"
+              style="width: 420px; font-size: 15px;"
+            >
+              <div
+                class="confirmation-content"
+              >
+                <span>
+                  Are you sure you want to delete the
+                  
+                  <b>
+                    
+                  </b>
+                  
+                  location sequence?
+                </span>
+              </div>
+            </dialog>
+          </div>
+           
+          <div
+            class="sequences_view__body__main_view__content__step_cards_area"
+          >
+            <div
+              class="sequences_view__body__main_view__content__step_cards_area__content"
+            >
+              <div
+                class="sequences_view__body__main_view__content__step_cards_area__sub_cards_area"
+              >
+                <div
+                  class="sequences_view__body__main_view__content__step_cards_area__card"
+                >
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__main_text"
+                  >
+                    
+                      tube_rack
+                    
+                  </p>
+                   
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__sub_text"
+                  >
+                    
+                      Location Sequence
+                    
+                  </p>
+                </div>
+                 
+                <div
+                  class="sequences_view__body__main_view__content__step_cards_area__card--indented"
+                >
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__main_text"
+                  >
+                    
+                        test tuberack 65 mL tubes [2]
+                      
+                  </p>
+                   
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__sub_text"
+                  >
+                    
+                        Location
+                      
+                  </p>
+                </div>
+                 
+                <div
+                  class="sequences_view__body__main_view__content__step_cards_area__card_button"
+                >
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card_button__text"
+                  >
+                    
+                      Add Location +
+                    
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sequences_view__body__main_view__content__step_cards_area__sub_cards_area"
+              >
+                <div
+                  class="sequences_view__body__main_view__content__step_cards_area__card"
+                >
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__main_text"
+                  >
+                    
+                      well_plate
+                    
+                  </p>
+                   
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__sub_text"
+                  >
+                    
+                      Location Sequence
+                    
+                  </p>
+                </div>
+                 
+                <div
+                  class="sequences_view__body__main_view__content__step_cards_area__card--indented"
+                >
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__main_text"
+                  >
+                    
+                        test 96 wellplate 2ml 3xT [1]
+                      
+                  </p>
+                   
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card__sub_text"
+                  >
+                    
+                        Location
+                      
+                  </p>
+                </div>
+                 
+                <div
+                  class="sequences_view__body__main_view__content__step_cards_area__card_button"
+                >
+                  <p
+                    class="sequences_view__body__main_view__content__step_cards_area__card_button__text"
+                  >
+                    
+                      Add Location +
+                    
+                  </p>
+                </div>
+              </div>
+               
+              <br />
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="sequences_view__body__main_view__side_panel"
+        >
+          <locationsequenceconfigform-stub
+            formtype=""
+            seqidx="-1"
+          />
+           
+          <locationconfigform-stub
+            formtype=""
+            locidx="-1"
+            seqidx="-1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

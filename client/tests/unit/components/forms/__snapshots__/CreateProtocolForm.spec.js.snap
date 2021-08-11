@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted CreateProtocolForm renders correctly 1`] = `
+<div>
+  <div
+    class="create_protocol_form"
+  >
+    <p
+      class="create_protocol_form__title"
+    >
+      Create New Protocol
+    </p>
+     
+    <div
+      class="create_protocol_form__input_group"
+    >
+      <inputtext
+        class="create_protocol_form__name_input"
+        placeholder="Name"
+        type="text"
+      />
+       
+      <textarea
+        class="create_protocol_form__description_input"
+        placeholder="Description"
+      />
+    </div>
+     
+    <div
+      class="button_container"
+    >
+      <progressspinner
+        animationduration=".5s"
+        class="create_protocol_form__progress_spinner"
+        fill="#EEEEEE"
+        strokewidth="8"
+        style="display: none;"
+      />
+       
+      <button
+        class="base_button small_button_"
+        disabled="disabled"
+        label="Create New"
+      />
+    </div>
+  </div>
+</div>
+`;

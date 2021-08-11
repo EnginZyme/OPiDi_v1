@@ -1,0 +1,17 @@
+matrix:
+- name: python
+  sources:
+  - setup.py
+  - '**/*.py|!test/**|!tools/**'
+  hunspell:
+    d: en_US
+  aspell:
+    lang: en
+  dictionary:
+    wordlists:
+    - .wordlist.txt
+    encoding: utf-8
+  pipeline:
+  - pyspelling.filters.python:
+      strings: false
+      comments: true

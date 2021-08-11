@@ -1,0 +1,15 @@
+{
+  "name": {
+    "type": String,
+    "Description": "Custom name we provide to identify the pipette"
+  },
+  "id": {
+    "type": String,
+    "Description": "Id used by Opentrons API to identify a specific pipette (ex. 'p300_single' to identify the single channel pipette gen. 1)"
+  },
+  "is_multichannel": {
+    "type": Boolean,
+    "Description": "True for 8 channel pipettes,  False for single channel pipettes"
+    
+  }
+}

@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ShakerConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Shaker
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Step Name
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div
+        class="form_sub_group"
+      >
+        <div>
+          <p
+            class="step_config_form__body__content__label--medium"
+          >
+            
+            Speed (rpm)
+          
+          </p>
+           
+          <inputnumber
+            class="step_config_form__body__content__input--short"
+            max="3000"
+            min="0"
+          />
+        </div>
+         
+        <div>
+          <p
+            class="step_config_form__body__content__label--medium"
+          >
+            
+            Set Point (°C)
+          
+          </p>
+           
+          <inputnumber
+            class="step_config_form__body__content__input--short"
+            max="99"
+            min="0"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="form_sub_group"
+      >
+        <div>
+          <p
+            class="step_config_form__body__content__label--medium"
+          >
+            
+            Temperature Control
+          
+          </p>
+           
+          <dropdown
+            class="step_config_form__body__content__dropdown"
+            optionlabel="name"
+            options="[object Object],[object Object]"
+            placeholder="Select option"
+          />
+        </div>
+         
+        <div>
+          <p
+            class="step_config_form__body__content__label--medium"
+          >
+            
+            Cool Down
+          
+          </p>
+           
+          <dropdown
+            class="step_config_form__body__content__dropdown"
+            optionlabel="name"
+            options="[object Object],[object Object]"
+            placeholder="Select option"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="form_sub_group"
+      >
+        <div>
+          <p
+            class="step_config_form__body__content__label--medium"
+          >
+            
+            Wait for Stop
+          
+          </p>
+           
+          <dropdown
+            class="step_config_form__body__content__dropdown"
+            optionlabel="name"
+            options="[object Object],[object Object]"
+            placeholder="Select option"
+          />
+        </div>
+         
+        <div>
+          <p
+            class="step_config_form__body__content__label--medium"
+          >
+            
+            Force Stop
+          
+          </p>
+           
+          <dropdown
+            class="step_config_form__body__content__dropdown"
+            optionlabel="name"
+            options="[object Object],[object Object]"
+            placeholder="Select option"
+          />
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          Duration
+        </p>
+         
+        <div
+          class="form_sub_group"
+        >
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              Value
+            </p>
+             
+            <inputnumber
+              class="step_config_form__body__content__input--short"
+              max="999999"
+              min="1"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              Unit
+            </p>
+             
+            <dropdown
+              class="step_config_form__body__content__dropdown"
+              optionlabel="name"
+              options="[object Object],[object Object],[object Object]"
+              placeholder="Select option"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

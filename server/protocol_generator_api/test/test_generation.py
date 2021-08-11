@@ -1,0 +1,394 @@
+import unittest
+import json
+from protocol_generator_api.test.base import BaseTestCase
+
+
+sample_protocol_payload = {
+    "id": 0,
+    "protocol": {
+        "metadata": {
+            "name": "test",
+            "description": "An Initial attempt at a comprehensive OpenTrons Protocol that can be simulated or ran live to check new changes to the OpenTrons",
+            "author": {"name": "Stefan Ionescu", "email": "stefan@enginzyme.com"},
+            "is_verified": False,
+            "is_shared": False,
+            "created": 1626862367051,
+        },
+        "deck": {
+            "left_pipette": {
+                "pipette": {
+                    "name": "Single Channel 300 uL - Gen 1",
+                    "id": "p300_single",
+                    "is_multichannel": False,
+                },
+                "tipracks": [7, 10],
+            },
+            "right_pipette": {
+                "pipette": {
+                    "name": "8 Channel 300 uL - Gen 2",
+                    "id": "p300_multi_gen2",
+                    "is_multichannel": True,
+                },
+                "tipracks": [8, 9, 11],
+            },
+            "slots": {
+                "1": {
+                    "name": "shakerlabware_1",
+                    "labware_name": "2.0ml Eppendorfs on Al-rack on 3000T",
+                    "labware_type": "shakerLabware",
+                    "labware_id": "2.0ml_eppendorfs_on_al_rack_on_3000t",
+                    "nickname": "",
+                    "display_name": "2.0ml Eppendorfs on Al-rack on 3000T [1]",
+                    "id": 1,
+                },
+                "2": {},
+                "3": {},
+                "4": {
+                    "name": "wellplate_4",
+                    "labware_name": "VWR 96 well-plate 2ml",
+                    "labware_type": "wellPlate",
+                    "labware_id": "vwr_96_wellplate_2.0ml",
+                    "nickname": "",
+                    "display_name": "VWR 96 well-plate 2ml [4]",
+                    "id": 4,
+                },
+                "5": {
+                    "name": "tuberack_5",
+                    "labware_name": "10 Tube Rack with 4x50 mL, 6x15 mL tubes",
+                    "labware_type": "tubeRack",
+                    "labware_id": "10_tuberack_4x50ml_6x15ml",
+                    "nickname": "",
+                    "display_name": "10 Tube Rack with 4x50 mL, 6x15 mL tubes [5]",
+                    "id": 5,
+                },
+                "6": {
+                    "name": "reservoir_6",
+                    "labware_name": "Brand 1x slot 220 mL",
+                    "labware_type": "reservoir",
+                    "labware_id": "brand_1x_slot_220ml",
+                    "nickname": "",
+                    "display_name": "Brand 1x slot 220 mL [6]",
+                    "id": 6,
+                },
+                "7": {
+                    "name": "tiprack_7",
+                    "labware_name": "Opentrons 96 Tip Rack 0.3 mL",
+                    "labware_type": "tipRack",
+                    "labware_id": "enginzyme_96_tiprack_300ul",
+                    "nickname": "",
+                    "display_name": "Opentrons 96 Tip Rack 0.3 mL [7]",
+                    "id": 7,
+                },
+                "8": {
+                    "name": "tiprack_8",
+                    "labware_name": "Opentrons 96 Tip Rack 10 µL",
+                    "labware_type": "tipRack",
+                    "labware_id": "enginzyme_96_tiprack_10ul",
+                    "nickname": "",
+                    "display_name": "Opentrons 96 Tip Rack 10 µL [8]",
+                    "id": 8,
+                },
+                "9": {
+                    "name": "tiprack_9",
+                    "labware_name": "Opentrons 96 Filter Tip Rack 20 µL",
+                    "labware_type": "tipRack",
+                    "labware_id": "enginzyme_96_tiprack_20ul",
+                    "nickname": "",
+                    "display_name": "Opentrons 96 Filter Tip Rack 20 µL [9]",
+                    "id": 9,
+                },
+                "10": {
+                    "name": "tiprack_10",
+                    "labware_name": "Opentrons 96 Tip Rack 0.3 mL",
+                    "labware_type": "tipRack",
+                    "labware_id": "enginzyme_96_tiprack_300ul",
+                    "nickname": "",
+                    "display_name": "Opentrons 96 Tip Rack 0.3 mL [10]",
+                    "id": 10,
+                },
+                "11": {
+                    "name": "tiprack_11",
+                    "labware_name": "Opentrons 96 Tip Rack 0.3 mL",
+                    "labware_type": "tipRack",
+                    "labware_id": "enginzyme_96_tiprack_300ul",
+                    "nickname": "",
+                    "display_name": "Opentrons 96 Tip Rack 0.3 mL [11]",
+                    "id": 11,
+                },
+                "12": {},
+            },
+        },
+        "steps": [
+            {
+                "type": "slack_message",
+                "name": "Slack Message",
+                "id": 3,
+                "substeps": [],
+                "channel": "opentrons05_hercules",
+                "message": "Testing OpenTrons",
+                "channel_object": {"channel": "opentrons05_hercules"},
+            },
+            {
+                "type": "sequence_transfer",
+                "name": "Sequence Transfer",
+                "id": 2,
+                "substeps": [],
+                "parameters": {
+                    "pipette": "left_pipette",
+                    "pipette_obj": {
+                        "name": "(Left) Single Channel 300 uL - Gen 1",
+                        "category": "left_pipette",
+                        "is_multichannel": False,
+                    },
+                    "pipette_strategy": "",
+                    "volumes": [54],
+                    "volumes_string": "54",
+                    "source_sequence": "My Test Sequence Source",
+                    "sourceSequenceId": 1,
+                    "destination_sequence": " My Test Sequence Destination",
+                    "destinationSequenceId": 0,
+                    "liquidClass": "Default",
+                    "liquidClassId": 0,
+                    "tipsStrategy": "STANDARD",
+                    "offset": {
+                        "source": 1,
+                        "destination": 5,
+                        "source_type": "Bottom",
+                        "destination_type": "Bottom",
+                    },
+                },
+            },
+            {
+                "type": "pause",
+                "name": "Pause User",
+                "id": 1,
+                "substeps": [],
+                "auto_resume": False,
+                "pause_time": 10,
+            },
+            {
+                "type": "loop",
+                "name": "Loop Shake Transfer",
+                "id": 4,
+                "num_iterations": 4,
+                "substeps": [
+                    {
+                        "type": "bioshake_3000t",
+                        "name": "Bioshake 3000T",
+                        "id": 5,
+                        "substeps": [],
+                        "parameters": {
+                            "speed": 1420,
+                            "setpoint": 42,
+                            "tempControl": False,
+                            "cooldown": False,
+                            "duration": 52,
+                            "wait_for_stop": True,
+                            "force_stop": False,
+                        },
+                    },
+                    {
+                        "type": "loop",
+                        "name": "Loop Inner Transfer",
+                        "id": 7,
+                        "num_iterations": 3,
+                        "substeps": [
+                            {
+                                "type": "simple_transfer",
+                                "name": "Simple Transfer Slow",
+                                "id": 8,
+                                "substeps": [],
+                                "parameters": {
+                                    "pipette": "left_pipette",
+                                    "pipette_obj": {
+                                        "name": "(Left) Single Channel 300 uL - Gen 1",
+                                        "category": "left_pipette",
+                                        "is_multichannel": False,
+                                    },
+                                    "pipette_strategy": "",
+                                    "volumes": [250],
+                                    "volumes_string": "250",
+                                    "source": {
+                                        "slot_number": 6,
+                                        "slot_name": "reservoir_6",
+                                        "wells": ["A1"],
+                                    },
+                                    "destination": {
+                                        "slot_number": 1,
+                                        "slot_name": "shakerlabware_1",
+                                        "wells": ["A1", "A6", "B3", "D5"],
+                                    },
+                                    "liquidClass": "Liquid Class Slow",
+                                    "liquidClassId": 2,
+                                    "tipsStrategy": "ECO",
+                                    "offset": {
+                                        "source": 1,
+                                        "destination": 1,
+                                        "source_type": "Bottom",
+                                        "destination_type": "Bottom",
+                                    },
+                                },
+                            },
+                            {
+                                "type": "pause",
+                                "name": "Pause Auto",
+                                "id": 10,
+                                "substeps": [],
+                                "auto_resume": True,
+                                "pause_time": 54,
+                            },
+                            {
+                                "type": "simple_transfer",
+                                "name": "Simple Transfer Fast",
+                                "id": 11,
+                                "substeps": [],
+                                "parameters": {
+                                    "pipette": "right_pipette",
+                                    "pipette_obj": {
+                                        "name": "(Right) 8 Channel 300 uL - Gen 2",
+                                        "category": "right_pipette",
+                                        "is_multichannel": True,
+                                    },
+                                    "pipette_strategy": "",
+                                    "volumes": [20],
+                                    "volumes_string": "20",
+                                    "source": {
+                                        "slot_number": 4,
+                                        "slot_name": "wellplate_4",
+                                        "wells": ["A1", "A5", "A10"],
+                                    },
+                                    "destination": {
+                                        "slot_number": 6,
+                                        "slot_name": "reservoir_6",
+                                        "wells": ["A1"],
+                                    },
+                                    "liquidClass": "Liquid Class Fast",
+                                    "liquidClassId": 1,
+                                    "tipsStrategy": "ECO",
+                                    "offset": {
+                                        "source": 1,
+                                        "destination": 1,
+                                        "source_type": "Bottom",
+                                        "destination_type": "Bottom",
+                                    },
+                                },
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+        "liquid_classes": [
+            {
+                "name": "Default",
+                "id": 0,
+                "liquid_config_object": {
+                    "touch_tip": False,
+                    "blow_out": True,
+                    "carryover": True,
+                    "air_gap": 0,
+                    "blowout_location": "destination well",
+                    "mix_before": {"repetitions": 0, "volume": 0},
+                    "mix_after": {"repetitions": 0, "volume": 0},
+                    "aspirate_rate": 1,
+                    "dispense_rate": 1,
+                    "blow_out_rate": 1,
+                },
+            },
+            {
+                "name": "Liquid Class Fast",
+                "id": 1,
+                "liquid_config_object": {
+                    "touch_tip": False,
+                    "blow_out": True,
+                    "blowout_location": "destination well",
+                    "carryover": True,
+                    "air_gap": 0,
+                    "mix_before": {"repetitions": 0, "volume": 0},
+                    "mix_after": {"repetitions": 0, "volume": 0},
+                    "aspirate_rate": 1.7,
+                    "dispense_rate": 1.6,
+                    "blow_out_rate": 2,
+                },
+            },
+            {
+                "name": "Liquid Class Slow",
+                "id": 2,
+                "liquid_config_object": {
+                    "touch_tip": True,
+                    "blow_out": False,
+                    "blowout_location": "destination well",
+                    "carryover": True,
+                    "air_gap": 5,
+                    "mix_before": {"repetitions": 1, "volume": 0},
+                    "mix_after": {"repetitions": 0, "volume": 0},
+                    "aspirate_rate": 0.1,
+                    "dispense_rate": 0.2,
+                    "blow_out_rate": 0.5,
+                },
+            },
+        ],
+        "sequences": [
+            {
+                "name": " My Test Sequence Destination",
+                "locations": [
+                    {
+                        "slot_number": 4,
+                        "slot_name": "wellplate_4",
+                        "offset": {"offset_type": "", "value": 0},
+                        "wells": [
+                            "B2",
+                            "B9",
+                            "E7",
+                            "F1",
+                            "F2",
+                            "F3",
+                            "F4",
+                            "G1",
+                            "G2",
+                            "G3",
+                            "G4",
+                            "H1",
+                            "H2",
+                            "H3",
+                            "H4",
+                        ],
+                        "id": 0,
+                    }
+                ],
+                "id": 0,
+                "locationCounter": 1,
+            },
+            {
+                "name": "My Test Sequence Source",
+                "locations": [
+                    {
+                        "slot_number": 6,
+                        "slot_name": "reservoir_6",
+                        "offset": {"offset_type": "", "value": 0},
+                        "wells": ["A1"],
+                        "id": 0,
+                    }
+                ],
+                "id": 1,
+                "locationCounter": 1,
+            },
+        ],
+        "stepCounter": 12,
+        "sequenceCounter": 2,
+        "liquidClassCounter": 3,
+    },
+}
+
+
+class TestGenerationBlueprint(BaseTestCase):
+    def test_protocol_file_string_generation(self):
+        """Tests the generation of the contents of a robot protocol file for the given protocol object."""
+        with self.client:
+            response = self.client.post("/api/1/generator/generate/", data=json.dumps(sample_protocol_payload),
+                                        content_type='application/json')
+            self.assertStatus(response, 200)
+
+
+if __name__ == "__main__":
+    unittest.main()

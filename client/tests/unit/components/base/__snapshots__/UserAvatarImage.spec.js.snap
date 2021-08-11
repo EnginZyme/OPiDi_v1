@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted UserAvatarImage renders correctly 1`] = `
+<img
+  alt="Avatar"
+  class="user-avatar-image user-avatar-image--small"
+  src="../../assets/logo_dark.svg"
+/>
+`;
+
+exports[`shallowMounted UserAvatarImage with 'size' prop set to large renders correctly 1`] = `
+<img
+  alt="Avatar"
+  class="user-avatar-image user-avatar-image--small"
+  large="true"
+  src="../../assets/logo_dark.svg"
+/>
+`;

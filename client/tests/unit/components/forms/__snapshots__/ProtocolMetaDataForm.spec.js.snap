@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ProtocolMetaDataForm renders correctly 1`] = `
+<div>
+  <div
+    class="metadata_form"
+  >
+    <div
+      class="metadata_form__title"
+    >
+      <p
+        class="metadata_form__title__text"
+      >
+        Protocol Meta-Data
+      </p>
+       
+      <button
+        class="p-button-primary metadata_form__verify_button"
+        label="In Development"
+      />
+    </div>
+     
+    <dialog
+      header="Confirmation"
+      modal="true"
+      position="top"
+      style="width: 420px;"
+    >
+      <div
+        class="confirmation-content"
+      >
+        <span>
+          Are you sure you want to set this protocol as Verified? (You will
+          no longer be able to save further changes)
+        </span>
+      </div>
+    </dialog>
+     
+    <div
+      class="metadata_form__body"
+    >
+      <div
+        class="metadata_form__body__content--left-col"
+      >
+        <label
+          for="name"
+        >
+          Name
+        </label>
+         
+        <inputtext
+          class="metadata_form__body__content__text_input"
+          id="name"
+          type="text"
+        />
+         
+        <label
+          for="description"
+        >
+          Description
+        </label>
+         
+        <textarea
+          class="metadata_form__body__content__text_area"
+          id="description"
+          type="text"
+        />
+      </div>
+       
+      <div
+        class="metadata_form__body__content--right-col"
+      >
+        <label
+          for="author"
+        >
+          Author
+        </label>
+         
+        <inputtext
+          class="metadata_form__body__content__text_input"
+          id="author"
+          readonly="readonly"
+          type="text"
+          value="Foo Bar"
+        />
+         
+        <label
+          for="date_created"
+        >
+          Date Created
+        </label>
+         
+        <inputtext
+          class="metadata_form__body__content__text_input"
+          id="date_created"
+          readonly="readonly"
+          type="text"
+          value="Wed Feb 17 2021"
+        />
+         
+        <label
+          for="share"
+        >
+          Share Status
+        </label>
+         
+        <dropdown
+          class="metadata_form__body__content__dropdown"
+          id="share"
+          optionlabel="value"
+          options="[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

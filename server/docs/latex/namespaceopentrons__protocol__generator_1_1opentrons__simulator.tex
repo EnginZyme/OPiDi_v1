@@ -1,0 +1,62 @@
+\hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__simulator}{}\doxysection{opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+simulator Namespace Reference}
+\label{namespaceopentrons__protocol__generator_1_1opentrons__simulator}\index{opentrons\_protocol\_generator.opentrons\_simulator@{opentrons\_protocol\_generator.opentrons\_simulator}}
+
+
+Opentrons Simulator support functions.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__simulator_a7edf72eda00add312c4152f9e71945a0}{run\+\_\+simulation}} (protocol\+\_\+string, labware\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Simulate the protocol passed in and return the output. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__simulator_a0f3d158ac2e4b716a6363095efad0faf}{main}} (args)
+\begin{DoxyCompactList}\small\item\em Main loop to parse the arguments and call, protocol simulate function, and print out the simulation output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Opentrons Simulator support functions. 
+
+Simulates a given protocol using the native Opentrons Simulate library
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The protocol file containing the protocol to be simulated \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__simulator_a0f3d158ac2e4b716a6363095efad0faf}\label{namespaceopentrons__protocol__generator_1_1opentrons__simulator_a0f3d158ac2e4b716a6363095efad0faf}} 
+\index{opentrons\_protocol\_generator.opentrons\_simulator@{opentrons\_protocol\_generator.opentrons\_simulator}!main@{main}}
+\index{main@{main}!opentrons\_protocol\_generator.opentrons\_simulator@{opentrons\_protocol\_generator.opentrons\_simulator}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+simulator.\+main (\begin{DoxyParamCaption}\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Main loop to parse the arguments and call, protocol simulate function, and print out the simulation output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & system arguments from the command line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__simulator_a7edf72eda00add312c4152f9e71945a0}\label{namespaceopentrons__protocol__generator_1_1opentrons__simulator_a7edf72eda00add312c4152f9e71945a0}} 
+\index{opentrons\_protocol\_generator.opentrons\_simulator@{opentrons\_protocol\_generator.opentrons\_simulator}!run\_simulation@{run\_simulation}}
+\index{run\_simulation@{run\_simulation}!opentrons\_protocol\_generator.opentrons\_simulator@{opentrons\_protocol\_generator.opentrons\_simulator}}
+\doxysubsubsection{\texorpdfstring{run\_simulation()}{run\_simulation()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+simulator.\+run\+\_\+simulation (\begin{DoxyParamCaption}\item[{}]{protocol\+\_\+string,  }\item[{}]{labware\+\_\+map }\end{DoxyParamCaption})}
+
+
+
+Simulate the protocol passed in and return the output. 
+
+\begin{DoxyVerb}   @param protocol_string The protocol to be simulated
+   @param labware_map Location of any custom labware that the protocol requires.
+   @return simulation The output of the opentrons simulation
+\end{DoxyVerb}
+ 

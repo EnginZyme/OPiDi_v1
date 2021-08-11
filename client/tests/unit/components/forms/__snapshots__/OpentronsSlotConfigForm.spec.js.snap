@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted OpentronsSlotConfigForm renders correctly 1`] = `
+<div>
+  <div
+    class="slot_layout__grid"
+  >
+    <deckslotcard-stub
+      index="10"
+    />
+     
+    <deckslotcard-stub
+      index="11"
+    />
+     
+    <div />
+     
+    <deckslotcard-stub
+      index="7"
+    />
+     
+    <deckslotcard-stub
+      index="8"
+    />
+     
+    <deckslotcard-stub
+      index="9"
+    />
+     
+    <deckslotcard-stub
+      index="4"
+    />
+     
+    <deckslotcard-stub
+      index="5"
+    />
+     
+    <deckslotcard-stub
+      index="6"
+    />
+     
+    <deckslotcard-stub
+      index="1"
+    />
+     
+    <deckslotcard-stub
+      index="2"
+    />
+     
+    <deckslotcard-stub
+      index="3"
+    />
+  </div>
+</div>
+`;

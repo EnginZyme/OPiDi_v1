@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ProtocolEditorSidePanel renders correctly 1`] = `
+<div>
+  <div
+    class="protocol_side_panel"
+  >
+    <div
+      class="protocol_side_panel__title"
+    >
+      <button
+        class="p-button-rounded p-button-text"
+        icon="pi pi-angle-left"
+      />
+       
+      <dialog
+        header="Confirmation"
+        modal="true"
+        position="top"
+        style="width: 420px; font-size: 15px;"
+      >
+        <div
+          class="confirmation_content"
+        >
+          <span>
+            Do you want to discard the changes you've made?
+          </span>
+        </div>
+      </dialog>
+       
+      <span
+        class="protocol_side_panel__title__text"
+      >
+         Protocol Editor 
+      </span>
+    </div>
+     
+    <div
+      class="protocol_side_panel__button_group"
+    >
+      <div
+        class="protocol_side_panel__grid"
+      >
+        <button
+          class="base_button large_button_"
+          label="Meta Data"
+        />
+         
+        <button
+          class="base_button large_button_"
+          label="Deck"
+        />
+         
+        <button
+          class="base_button large_button_"
+          label="Sequences"
+        />
+         
+        <button
+          class="base_button large_button_"
+          label="Steps"
+        />
+         
+        <button
+          class="base_button large_button_"
+          label="Generate"
+        />
+         
+        <span
+          class="p-buttonset"
+        >
+          <button
+            class="file_button"
+            icon="pi pi-save"
+          />
+           
+          <button
+            class="file_button"
+            icon="pi pi-copy"
+          />
+           
+          <button
+            class="file_button"
+            icon="pi pi-trash"
+          />
+        </span>
+         
+        <dialog
+          header="Confirmation"
+          modal="true"
+          position="top"
+          style="width: 420px;"
+        >
+          <div
+            class="confirmation-content"
+          >
+            <span>
+              Are you sure you want to delete this protocol?
+            </span>
+             
+            <span>
+              (Please note that this action is irreversible)
+            </span>
+          </div>
+        </dialog>
+         
+        <dialog
+          header="Confirmation"
+          modal="true"
+          position="top"
+          style="width: 420px;"
+        >
+          <div
+            class="confirmation-content"
+          >
+            <span>
+              Are you sure you want to clone this protocol?
+            </span>
+             
+            <span>
+              (Please note that all unsaved changes to the parent protocol
+              will be lost)
+            </span>
+          </div>
+        </dialog>
+         
+        <dialog
+          header="Confirmation"
+          modal="true"
+          position="top"
+          style="width: 420px; font-size: 15px;"
+        >
+          <div
+            class="confirmation_content"
+          >
+            <span>
+              Are you sure you want to save this protocol?
+            </span>
+          </div>
+        </dialog>
+      </div>
+       
+      <div
+        class="protocol_side_panel__grid"
+      >
+        <button
+          class="base_button large_button_"
+          label="Config."
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

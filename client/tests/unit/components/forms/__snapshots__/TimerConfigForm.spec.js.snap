@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted TimerConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Timer
+  </p>
+   
+  <img
+    alt="Coming soon!"
+    src="../../assets/coming_soon_meme.jpg"
+    style="width: 100%;"
+  />
+</div>
+`;

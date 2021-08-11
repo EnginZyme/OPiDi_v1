@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ProtocolsView renders correctly 1`] = `
+<div>
+  <div
+    class="protocols_view"
+  >
+    <div
+      class="protocols_view__header"
+    >
+      <div
+        class="protocols_view__header__title"
+      >
+        <span
+          class="protocols_view__header__title__text"
+        >
+          Protocols
+        </span>
+         
+        <inputtext
+          class="protocols_view__header__title__input--search"
+          placeholder="Search"
+          type="text"
+        />
+      </div>
+    </div>
+     
+    <div
+      class="protocols_view__body"
+    >
+      <div
+        class="protocols_view__body__side_panel"
+      >
+        <button
+          class="p-button-text small_font"
+          label="My Protocols"
+        />
+         
+        <button
+          class="p-button-text small_font p-button-secondary"
+          label="Shared Protocols"
+        />
+      </div>
+       
+      <div
+        class="protocols_view__body__main_view"
+      >
+        <div
+          class="protocols_view__body__main_view__scroll_panel"
+        >
+          <protocolcard-stub
+            protocol="[object Object]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

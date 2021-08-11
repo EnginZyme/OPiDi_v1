@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted SignOutView renders correctly 1`] = `
+<div
+  class="sign_out_view"
+>
+  <div
+    class="sign_out_view__group"
+  >
+    <useravatarimage-stub
+      size="large"
+    />
+  </div>
+   
+  <div>
+    <p
+      class="sign_out_view__name_text"
+    >
+      bar baz
+    </p>
+     
+    <p
+      class="sign_out_view__email_text"
+    >
+      bar@acme.com
+    </p>
+  </div>
+   
+  <div
+    class="sign_out_view__group"
+  >
+    <button
+      class="base_button medium_button_"
+      label="Sign Out"
+    />
+  </div>
+</div>
+`;

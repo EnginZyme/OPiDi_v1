@@ -1,0 +1,58 @@
+{
+    "deck": {
+        "type": deck_object,
+        "description":  "A deck as defined in the decks_schema"
+    },
+    "sequences": {
+        "type": [sequence_objects],
+        "description": "List of location sequences",
+        "sequence_object": {
+            "sequence_name": {
+                "type": String,
+                "description": "Label given to the sequence"
+            },
+            "locations": {
+                "type": [object],
+                "description": "A list of locations objects. Each one of them defined by the slot name and a list of wells",
+                "location_object": {
+                    "slot_name":{
+                        "type": String,
+                        "description": "Label that references a labware in the deck",
+                        "restriction": "The slot name must match the label given to an existing labware in a slot in the deck"
+                    },
+                    "wells": {
+                        "type": [Strings],
+                        "description": "A list of wells, ranging from A1 to the maximum row and column defined in the labware",
+                        "restriction": "The string has the format %c%d with char ranging from A to the maximum row  allows by the labware (H in case of 96 well plates) followed by an integer ranging from 1 to maximum column (12 in case of 96 well plates)"
+                    }
+                }
+            }
+        },
+        "example": [
+            {
+                "slot_name": "Samples",
+                "wells": [
+                    "A1",
+                    "B1",
+                    "C1"
+                ]
+            },
+            {
+                "slot_name": "Samples2",
+                "wells": [
+                    "A1",
+                    "A2",
+                    "A3"
+                ]
+            }
+        ]
+    },
+    "steps": {
+        "type": [ step_objects ],
+        "description": "A list of step objects as described in the steps_schema, the robot will execute each step of this list in order"
+    },
+    "liquid_classes":  {
+        "type": [liquid_class_objects],
+        "description": "Liquid class object that act as transfer step modifiers "
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "array_transfer",
+    "description": "A transfer step where sources, destinations and volumes are defined in a csv file following a custom template",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+            },
+    "parameters": {
+        "pipette": "left_pipette",
+        "pipette_strategy": {
+            "type": string,
+            "description": "SINGLE_CHANNEL: any single channel pipette, MULTI_CHANNEL: any multichannel pipette, SINGLE_ACCURACY: two single channel pipettes with different ranges, MULTI_ACCURACY: two multichannel pipettes with different ranges",
+            "restriction": "Consistency must be checked between the chosen pipette strategy, the chosen pipettes and the available pipettes"
+        },
+        "array_map_filename": {
+            "type": string,
+            "description": "Filename of the CSV file containing the array map to parse as sources, destinations and volumes"
+        },
+        "liquid_config": {
+            "type": string,
+            "description": "Reference to a Liquid Config additional options in the transfer step.",
+            "restriction": "A liquid config with the smae name must exist in the instructions object"
+        },
+        "tipsStrategy": {
+            "type": string,
+            "description": "STANDARD: one tip per source, STRICT: one tip per dispense, ECO: reuse tip ",
+            "restriction": "Only STANDARD, STRICT and ECO values are allowed"
+        },
+        "offset": {
+            "source": {
+                "type": float,
+                "description": "Offset from the bottom of the source wells on the aspirate steps (Default: 1)"
+            },
+            "destination": {
+                "type": float,
+                "description": "Offset from the bottom of the destination wells on the dispense steps (Default: 1)"
+            }
+        }
+    }
+}

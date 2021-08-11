@@ -1,0 +1,96 @@
+\hypertarget{classopentrons__robot__handler_1_1TipsWatchdog}{}\doxysection{opentrons\+\_\+robot\+\_\+handler.\+Tips\+Watchdog Class Reference}
+\label{classopentrons__robot__handler_1_1TipsWatchdog}\index{opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}}
+
+
+Used to manage Opentrons tips.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classopentrons__robot__handler_1_1TipsWatchdog_a5824c47b5005436e997107313e707190}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classopentrons__robot__handler_1_1TipsWatchdog_ab4a4c822a13944aaddbacfbb94efb227}{pipette}}, tip\+\_\+strategy)
+\begin{DoxyCompactList}\small\item\em Initialise the pipettes and check the tip strategy. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classopentrons__robot__handler_1_1TipsWatchdog_a473f076bc7969d54b5c22c89ca8e7b19}{change\+\_\+tip}} (self, source=None)
+\begin{DoxyCompactList}\small\item\em Run before every action, check which tip strategy and if not Eco, change the tip. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classopentrons__robot__handler_1_1TipsWatchdog_a4ced6be14c21b536ae144091c1c178e0}{discard}} (self)
+\begin{DoxyCompactList}\small\item\em Run at the end of each step, checks which tip strategy is being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classopentrons__robot__handler_1_1TipsWatchdog_ab4a4c822a13944aaddbacfbb94efb227}\label{classopentrons__robot__handler_1_1TipsWatchdog_ab4a4c822a13944aaddbacfbb94efb227}} 
+{\bfseries pipette}
+\begin{DoxyCompactList}\small\item\em The active pipette. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classopentrons__robot__handler_1_1TipsWatchdog_a55d4bf875394d45de0b6b3c5c94e8d99}\label{classopentrons__robot__handler_1_1TipsWatchdog_a55d4bf875394d45de0b6b3c5c94e8d99}} 
+{\bfseries strategy}
+\begin{DoxyCompactList}\small\item\em The Tip Strategy used for this step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classopentrons__robot__handler_1_1TipsWatchdog_aa100bcd47ddd30177349621f36c1fa64}\label{classopentrons__robot__handler_1_1TipsWatchdog_aa100bcd47ddd30177349621f36c1fa64}} 
+{\bfseries source\+\_\+check}
+\begin{DoxyCompactList}\small\item\em The source labware for this step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to manage Opentrons tips. 
+
+Contains functions to pick up, discard, etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classopentrons__robot__handler_1_1TipsWatchdog_a5824c47b5005436e997107313e707190}\label{classopentrons__robot__handler_1_1TipsWatchdog_a5824c47b5005436e997107313e707190}} 
+\index{opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Tips\+Watchdog.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pipette,  }\item[{}]{tip\+\_\+strategy }\end{DoxyParamCaption})}
+
+
+
+Initialise the pipettes and check the tip strategy. 
+
+Since this class is reinitialised at the start of every pipette step, it should pick up a tip if it does not have one. If mode is ECO -\/ new tip, drop the current tip and take a new one.
+
+Tip Strategies\+:
+\begin{DoxyItemize}
+\item ECO -\/ Never take a new tip
+\item ECO -\/ NEW TIP -\/ Take a new tip only at the start of each new pipette step
+\item STRICT -\/ New tip for every movement
+\item STANDARD -\/ New tip per source labware
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pipette} & The pipette object to manage. \\
+\hline
+{\em tip\+\_\+strategy} & \{string\} The Strategy to use for managing tips \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classopentrons__robot__handler_1_1TipsWatchdog_a473f076bc7969d54b5c22c89ca8e7b19}\label{classopentrons__robot__handler_1_1TipsWatchdog_a473f076bc7969d54b5c22c89ca8e7b19}} 
+\index{opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}!change\_tip@{change\_tip}}
+\index{change\_tip@{change\_tip}!opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}}
+\doxysubsubsection{\texorpdfstring{change\_tip()}{change\_tip()}}
+{\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Tips\+Watchdog.\+change\+\_\+tip (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{source = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Run before every action, check which tip strategy and if not Eco, change the tip. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & From which labware the current action should source liquid \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classopentrons__robot__handler_1_1TipsWatchdog_a4ced6be14c21b536ae144091c1c178e0}\label{classopentrons__robot__handler_1_1TipsWatchdog_a4ced6be14c21b536ae144091c1c178e0}} 
+\index{opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}!discard@{discard}}
+\index{discard@{discard}!opentrons\_robot\_handler.TipsWatchdog@{opentrons\_robot\_handler.TipsWatchdog}}
+\doxysubsubsection{\texorpdfstring{discard()}{discard()}}
+{\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Tips\+Watchdog.\+discard (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Run at the end of each step, checks which tip strategy is being used. 
+
+If not an Eco mode, will drop the current tip. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+opentrons\+\_\+protocol\+\_\+generator/transpilers/opentrons\+\_\+robot\+\_\+handler.\+py\end{DoxyCompactItemize}

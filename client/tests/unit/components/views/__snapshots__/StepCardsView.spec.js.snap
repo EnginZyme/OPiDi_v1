@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted StepCardsView renders correctly 1`] = `
+<draggable-stub
+  animation="0"
+  class="step_cards_view__step_cards_view"
+  clone="[Function]"
+  element="div"
+  ghostclass="ghost"
+  group="description"
+  tag="div"
+  value="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+>
+  <div>
+    <div
+      class="step_cards_view__step_card"
+    >
+      <p
+        class="step_cards_view__step_card__main_text"
+      >
+        Sequence Transfer (0)
+      </p>
+       
+      <p
+        class="step_cards_view__step_card__sub_text"
+      >
+        
+        Sequence Transfer
+      
+      </p>
+    </div>
+     
+    <!---->
+  </div>
+  <div>
+    <div
+      class="step_cards_view__step_card"
+    >
+      <p
+        class="step_cards_view__step_card__main_text"
+      >
+        Loop (1)
+      </p>
+       
+      <p
+        class="step_cards_view__step_card__sub_text"
+      >
+        
+        Loop
+      
+      </p>
+    </div>
+     
+    <stepcardsview-stub
+      class="step_cards_view__step_card__sub_step_cards_view"
+      list="[object Object]"
+    />
+  </div>
+  <div>
+    <div
+      class="step_cards_view__step_card"
+    >
+      <p
+        class="step_cards_view__step_card__main_text"
+      >
+        Pause (3)
+      </p>
+       
+      <p
+        class="step_cards_view__step_card__sub_text"
+      >
+        
+        Pause
+      
+      </p>
+    </div>
+     
+    <!---->
+  </div>
+  <div>
+    <div
+      class="step_cards_view__step_card"
+    >
+      <p
+        class="step_cards_view__step_card__main_text"
+      >
+        Array Transfer (8)
+      </p>
+       
+      <p
+        class="step_cards_view__step_card__sub_text"
+      >
+        
+        Array Transfer
+      
+      </p>
+    </div>
+     
+    <!---->
+  </div>
+  <div>
+    <div
+      class="step_cards_view__step_card"
+    >
+      <p
+        class="step_cards_view__step_card__main_text"
+      >
+        Bioshake 3000T (4)
+      </p>
+       
+      <p
+        class="step_cards_view__step_card__sub_text"
+      >
+        
+        Bioshake 3000T
+      
+      </p>
+    </div>
+     
+    <!---->
+  </div>
+  <div>
+    <div
+      class="step_cards_view__step_card"
+    >
+      <p
+        class="step_cards_view__step_card__main_text"
+      >
+        Slack Message (5)
+      </p>
+       
+      <p
+        class="step_cards_view__step_card__sub_text"
+      >
+        
+        Slack Message
+      
+      </p>
+    </div>
+     
+    <!---->
+  </div>
+</draggable-stub>
+`;

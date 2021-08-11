@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted LocationConfigForm renders correctly 1`] = `
+<div
+  class="location_form"
+>
+  <p
+    class="location_form__title"
+  >
+    Location
+  </p>
+   
+  <div
+    class="location_form__body"
+  >
+    <div
+      class="location_form__body__content"
+    >
+      <div>
+        <p
+          class="location_form__body__content__label--medium"
+        >
+          Slot
+        </p>
+         
+        <dropdown
+          class="location_form__body__content__dropdown"
+          optionlabel="display_name"
+          options="[object Object],[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="location_form__body__content__label--medium"
+        >
+          
+          Wells (1)
+        
+        </p>
+         
+        <button
+          class="location_form__body__content__button p-button-raised p-button-success"
+          label="Update Wells"
+        />
+      </div>
+    </div>
+     
+    <!---->
+  </div>
+</div>
+`;

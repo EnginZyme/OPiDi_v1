@@ -1,0 +1,23 @@
+venv/
+*.pyc
+__pycache__/
+instance/
+.cache/
+.pytest_cache/
+.vscode/
+.coverage
+htmlcov/
+dist/
+build/
+test.db
+Pipfile.lock
+*.egg-info/
+.idea/
+*.swp
+*~
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+test/instructions/opentrons_comprehensive_test_V1.json
+test/protocols/opentrons_comprehensive_test_V1.py

@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "80:8765"
+    environment:
+      FLASK_ENV: dev
+      PORT: 8765
+      # DATABASE_URL: postgres://test-url
+      # SLACK_MESSAGE_WEBHOOK: http://slack-url

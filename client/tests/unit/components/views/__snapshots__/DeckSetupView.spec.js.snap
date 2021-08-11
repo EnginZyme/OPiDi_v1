@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted DeckSetupView renders correctly 1`] = `
+<div>
+  <div
+    class="deck_setup_view"
+  >
+    <div
+      class="deck_setup_view__header"
+    >
+      <div
+        class="deck_setup_view__header__title"
+      >
+        <span
+          class="deck_setup_view__header__title__text"
+        >
+          Deck Setup
+        </span>
+      </div>
+    </div>
+     
+    <div
+      class="deck_setup_view__body"
+    >
+      <span>
+        <label
+          class="deck_setup_view__body__device_type_label"
+          for=""
+        >
+          Device Type
+        </label>
+         
+        <dropdown
+          class="deck_setup_view__body__dropdown"
+          optionlabel="name"
+          options="[object Object]"
+          placeholder="Select Device"
+        />
+      </span>
+       
+      <div>
+        <div
+          class="deck_setup_view__body__deck_layout_card"
+        >
+          <p>
+            Deck Layout
+          </p>
+           
+          <opentronsslotconfigform-stub />
+        </div>
+      </div>
+       
+      <div
+        class="deck_setup_view__body__pipettes_card"
+      >
+        <p>
+          Pipettes
+        </p>
+         
+        <div
+          class="deck_setup_view__body__pipettes_card__grid"
+        >
+          <div
+            class="deck_setup_view__body__pipettes_card__grid__dropdown_group"
+          >
+            <label
+              class="deck_setup_view__body__pipettes_card__label"
+              for=""
+            >
+              Left Pipette
+            </label>
+             
+            <dropdown
+              class="deck_setup_view__body__dropdown--long"
+              optionlabel="name"
+              options="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+              placeholder="Select Pipette"
+            />
+          </div>
+           
+          <div
+            class="deck_setup_view__body__pipettes_card__grid__dropdown_group"
+          >
+            <label
+              class="deck_setup_view__body__pipettes_card__label"
+              for=""
+            >
+              Right Pipette
+            </label>
+             
+            <dropdown
+              class="deck_setup_view__body__dropdown--long"
+              optionlabel="name"
+              options="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+              placeholder="Select Pipette"
+            />
+          </div>
+           
+          <div
+            class="deck_setup_view__body__pipettes_card__grid__dropdown_group"
+          >
+            <label
+              class="deck_setup_view__body__pipettes_card__label"
+              for=""
+            >
+              Left Tipracks
+            </label>
+             
+            <multiselect
+              class="deck_setup_view__body__dropdown--long"
+              optionlabel="id"
+              options="[object Object]"
+              placeholder="Select Tiprack(s)"
+            />
+          </div>
+           
+          <div
+            class="deck_setup_view__body__pipettes_card__grid__dropdown_group"
+          >
+            <label
+              class="deck_setup_view__body__pipettes_card__label"
+              for=""
+            >
+              Right Tipracks
+            </label>
+             
+            <multiselect
+              class="deck_setup_view__body__dropdown--long"
+              optionlabel="id"
+              options="[object Object]"
+              placeholder="Select Tiprack(s)"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <br />
+    </div>
+  </div>
+</div>
+`;
