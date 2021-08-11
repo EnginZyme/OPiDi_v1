@@ -1,0 +1,59 @@
+\hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__cli}{}\doxysection{opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+cli Namespace Reference}
+\label{namespaceopentrons__protocol__generator_1_1opentrons__cli}\index{opentrons\_protocol\_generator.opentrons\_cli@{opentrons\_protocol\_generator.opentrons\_cli}}
+
+
+Opentrons Command Line Interface.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__cli_a224b31c4c3de0312143a51f2c2fa6329}{main}} (args)
+\begin{DoxyCompactList}\small\item\em Main loop to parse the arguments and call, protocol generator function, and save the resulting protocol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__cli_a4fe0e759b0da1d23fd68a8a43c75f19b}\label{namespaceopentrons__protocol__generator_1_1opentrons__cli_a4fe0e759b0da1d23fd68a8a43c75f19b}} 
+{\bfseries dir\+\_\+path} = os.\+path.\+dirname(os.\+path.\+realpath(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em The path of this file for use in absolute paths for transpilers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__cli_a523be66801fee0ca24e01232c6c58ada}\label{namespaceopentrons__protocol__generator_1_1opentrons__cli_a523be66801fee0ca24e01232c6c58ada}} 
+string {\bfseries output\+\_\+path} = \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__cli_a4fe0e759b0da1d23fd68a8a43c75f19b}{dir\+\_\+path}} + \char`\"{}/../test/protocols\char`\"{}
+\begin{DoxyCompactList}\small\item\em Where to save created protocols. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__cli_a43b78d8f9b2b83c44521847ab42f7c21}\label{namespaceopentrons__protocol__generator_1_1opentrons__cli_a43b78d8f9b2b83c44521847ab42f7c21}} 
+string {\bfseries instructions\+\_\+path} = \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__cli_a4fe0e759b0da1d23fd68a8a43c75f19b}{dir\+\_\+path}} + \char`\"{}/../test/instructions\char`\"{}
+\begin{DoxyCompactList}\small\item\em Where to find instructions files for generator input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Opentrons Command Line Interface. 
+
+A simple set of command line arguments to interface with the opentrons generator
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The name of the Robot Instructions Json file to use for the protocol. Default found at instructions\+\_\+path = dir\+\_\+path + \char`\"{}/../test/instructions\char`\"{}\\
+\hline
+{\em output} & the name of the protocol file generated. Default saved at output\+\_\+path = dir\+\_\+path + \char`\"{}/../test/protocols\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__cli_a224b31c4c3de0312143a51f2c2fa6329}\label{namespaceopentrons__protocol__generator_1_1opentrons__cli_a224b31c4c3de0312143a51f2c2fa6329}} 
+\index{opentrons\_protocol\_generator.opentrons\_cli@{opentrons\_protocol\_generator.opentrons\_cli}!main@{main}}
+\index{main@{main}!opentrons\_protocol\_generator.opentrons\_cli@{opentrons\_protocol\_generator.opentrons\_cli}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+cli.\+main (\begin{DoxyParamCaption}\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Main loop to parse the arguments and call, protocol generator function, and save the resulting protocol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & system arguments from the command line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}

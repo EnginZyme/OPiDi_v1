@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted SlackMessageConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Slack Message
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Step Name
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          Channel
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown"
+          optionlabel="channel"
+          options="[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          Message
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

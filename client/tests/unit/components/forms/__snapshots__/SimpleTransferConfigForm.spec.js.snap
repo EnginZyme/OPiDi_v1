@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted SimpleTransferConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Simple Transfer
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Step Name
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          Pipette
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown--stretch"
+          optionlabel="name"
+          options="[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Tips Strategy
+        
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown--stretch"
+          optionlabel="name"
+          options="[object Object],[object Object],[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Liquid Class
+        
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown--stretch"
+          optionlabel="name"
+          options="[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Source Slot
+        
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown--stretch"
+          optionlabel="display_name"
+          options="[object Object],[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Destination Slot
+        
+        </p>
+         
+        <dropdown
+          class="step_config_form__body__content__dropdown--stretch"
+          optionlabel="display_name"
+          options="[object Object],[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Source Offset
+        
+        </p>
+         
+        <div
+          class="step_config_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              Type
+            </p>
+             
+            <dropdown
+              class="step_config_form__body__content__dropdown"
+              optionlabel="name"
+              options="[object Object],[object Object]"
+              placeholder="Select option"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              
+              Value (mm)
+            
+            </p>
+             
+            <inputnumber
+              class="step_config_form__body__content__input--short"
+              maxfractiondigits="5"
+              minfractiondigits="2"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Destination Offset
+        
+        </p>
+         
+        <div
+          class="step_config_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              Type
+            </p>
+             
+            <dropdown
+              class="step_config_form__body__content__dropdown"
+              optionlabel="name"
+              options="[object Object],[object Object]"
+              placeholder="Select option"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="step_config_form__body__content__label--min"
+            >
+              
+              Value (mm)
+            
+            </p>
+             
+            <inputnumber
+              class="step_config_form__body__content__input--short"
+              maxfractiondigits="5"
+              minfractiondigits="2"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Source Wells (1)
+        
+        </p>
+         
+        <button
+          class="step_config_form__body__content__well_button p-button-raised p-button-success"
+          label="Update Wells"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Destination Wells (1)
+        
+        </p>
+         
+        <button
+          class="step_config_form__body__content__well_button p-button-raised p-button-success"
+          label="Update Wells"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Volumes (μL)
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+        />
+      </div>
+       
+      <br />
+    </div>
+     
+    <!---->
+     
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</div>
+`;

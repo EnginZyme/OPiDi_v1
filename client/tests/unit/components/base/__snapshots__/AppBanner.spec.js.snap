@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted AppBanner renders correctly 1`] = `
+<div
+  class="app-banner__grid"
+>
+  <div
+    class="app-banner--light"
+  >
+    <!---->
+     
+    <img
+      alt="EnginZyme Logo"
+      src="../../assets/logo_light.svg"
+    />
+     
+    <span
+      class="app-banner__app-name"
+    >
+      Protocol Designer
+    </span>
+     
+    <span
+      class="app-banner__app-version"
+    >
+      2.1.1
+    </span>
+  </div>
+</div>
+`;
+
+exports[`shallowMounted AppBanner with 'dark' prop set as true renders correctly 1`] = `
+<div
+  class="app-banner__grid"
+>
+  <div
+    class="app-banner--dark"
+  >
+    <img
+      alt="EnginZyme Logo"
+      src="../../assets/logo_dark.svg"
+    />
+     
+    <!---->
+     
+    <span
+      class="app-banner__app-name"
+    >
+      Protocol Designer
+    </span>
+     
+    <span
+      class="app-banner__app-version"
+    >
+      2.1.1
+    </span>
+  </div>
+</div>
+`;
+
+exports[`shallowMounted AppBanner with 'showImage' prop set as false renders correctly 1`] = `
+<div
+  class="app-banner__grid"
+>
+  <div
+    class="app-banner--light"
+  >
+    <!---->
+     
+    <!---->
+     
+    <span
+      class="app-banner__app-name"
+    >
+      Protocol Designer
+    </span>
+     
+    <span
+      class="app-banner__app-version"
+    >
+      2.1.1
+    </span>
+  </div>
+</div>
+`;

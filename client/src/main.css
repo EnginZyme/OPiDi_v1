@@ -1,0 +1,121 @@
+.confirmation-content {
+  display: flex;
+  flex-direction: column;
+}
+.p-dropdown-label {
+  font-size: 12px;
+}
+.p-component,
+.p-dropdown-label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.p-dropdown-item {
+  font-size: 12px;
+}
+.p-menu {
+  font-size: 12px;
+}
+.p-fileupload-choose {
+  border: 0;
+  color: #767676;
+  background: #efefff;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25),
+    -2px -2px 2px 1px rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  height: 32px;
+  font-size: 12px;
+}
+.p-chips .p-chips-multiple-container {
+  min-width: 295px;
+  background: #efefff;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 4px 3px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px 3px rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  color: #767676;
+}
+.p-selectbutton .p-button {
+  background-color: #efefff;
+}
+.p-button {
+  font-size: 11px;
+}
+.p-tooltip-text {
+  font-size: 12px;
+}
+.p-chips .p-chips-multiple-container .p-chips-token {
+  font-size: 12px;
+  background: #b6b6b6;
+}
+.base_button {
+  background: #1246a9;
+  border-radius: 4px;
+  border: 0;
+  color: #efefff;
+}
+.base_button_white {
+  background: #efefff;
+  border-radius: 4px;
+  border: 0;
+  color: #1246a9;
+}
+.large_button_ {
+  width: 138px;
+  height: 40px;
+  font-size: 14px;
+  filter: drop-shadow(4px 4px 4px #040716);
+}
+.small_button_ {
+  height: 24px;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
+  font-size: 12px;
+}
+.medium_button_ {
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
+}
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #efefff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bcbcbc88;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2196f388;
+}
+.split_button_ {
+  width: 138px;
+  font-size: 10px;
+}
+.split_button_ .p-button.p-button-icon-only,
+.split_button_ .p-button {
+  height: 40px;
+  background-color: #1246a9;
+}
+.split_button_ .p-button-label {
+  font-size: 14px;
+}
+.p-button.p-button-icon-only {
+  height: 29px;
+}
+.p-chips .p-chips-multiple-container .p-chips-input-token input {
+  font-size: 12px;
+}
+.p-inputnumber-input {
+  background: #efefff;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 4px 3px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px 3px rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  font-size: 12px;
+  width: 128px;
+  height: 32px;
+  border: none;
+}

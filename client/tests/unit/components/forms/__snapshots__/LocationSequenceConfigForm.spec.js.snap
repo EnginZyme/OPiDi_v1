@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted LocationSequenceConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Location Sequence
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          Name
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Number of Wells
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          readonly="readonly"
+          type="text"
+          value="1"
+        />
+         
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+`;

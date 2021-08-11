@@ -1,0 +1,123 @@
+\hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator}{}\doxysection{opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+generator Namespace Reference}
+\label{namespaceopentrons__protocol__generator_1_1opentrons__generator}\index{opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}}
+
+
+Opentrons Generator Functions.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__generator_ac1072d5c6bfff16b6ff5b5462ebacccb}{pretty\+\_\+print}} (data)
+\begin{DoxyCompactList}\small\item\em Used to replace a few incompatible phrases in the instructions file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad9de9b4bec7cccbed6ab823608adccc2}{load\+\_\+transpiler\+\_\+file}} (file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Used to load a transpiler file so as to concatenate it later. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__generator_a2c9f79677140451a7cd39329ee0b00bc}{parse\+\_\+lists\+\_\+to\+\_\+objects}} (robot\+\_\+instructions)
+\begin{DoxyCompactList}\small\item\em Used to parse the robot instructions file into Opentrons compatible objects. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__generator_a5f45b3364128991d8f496222faf20dc4}{generate\+\_\+protocol\+\_\+string}} (robot\+\_\+instructions)
+\begin{DoxyCompactList}\small\item\em Used to generate the protocol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_aac63538ef37eaf28f069f3b5ba4a1608}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_aac63538ef37eaf28f069f3b5ba4a1608}} 
+{\bfseries dir\+\_\+path} = os.\+path.\+dirname(os.\+path.\+realpath(\+\_\+\+\_\+file\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em The path of this file for use in absolute paths for transpilers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_a05a9636fa6d512d303940430ce846a5c}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_a05a9636fa6d512d303940430ce846a5c}} 
+string {\bfseries transpilers\+\_\+path} = \mbox{\hyperlink{namespaceopentrons__protocol__generator_1_1opentrons__generator_aac63538ef37eaf28f069f3b5ba4a1608}{dir\+\_\+path}} + \char`\"{}/transpilers\char`\"{}
+\begin{DoxyCompactList}\small\item\em The path for all transpilers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad7c92f10820b22036c7b9828bb59a30d}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad7c92f10820b22036c7b9828bb59a30d}} 
+string {\bfseries opentrons\+\_\+transpiler} = \textquotesingle{}opentrons\+\_\+transpiler.\+py\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em The main transpiler loop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_acc7f1753df1a44799a4abdb91d9517b5}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_acc7f1753df1a44799a4abdb91d9517b5}} 
+string {\bfseries opentrons\+\_\+protocol\+\_\+helpers} = \textquotesingle{}opentrons\+\_\+protocol\+\_\+helpers.\+py\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Protocol Utilities and Protocol Handler classes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_a352a6314211a5dcb798d4bc757e0ab1e}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_a352a6314211a5dcb798d4bc757e0ab1e}} 
+string {\bfseries opentrons\+\_\+robot\+\_\+handler} = \textquotesingle{}opentrons\+\_\+robot\+\_\+handler.\+py\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Robot Handler and Tip Watchdog classes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad27dffc36bf0c9ac28b7a422289098d8}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad27dffc36bf0c9ac28b7a422289098d8}} 
+string {\bfseries bioshake\+\_\+3000T} = \textquotesingle{}bioshake\+\_\+3000\+T.\+py\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em QInstruments Bio\+Shake 3000T custom class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Opentrons Generator Functions. 
+
+Contains functions for all of the protocol generation. The main purpose is to take an Instructions json file and concatenate the transpiler code thus outputting a protocol that can be run on the Opentrons 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_a5f45b3364128991d8f496222faf20dc4}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_a5f45b3364128991d8f496222faf20dc4}} 
+\index{opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}!generate\_protocol\_string@{generate\_protocol\_string}}
+\index{generate\_protocol\_string@{generate\_protocol\_string}!opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}}
+\doxysubsubsection{\texorpdfstring{generate\_protocol\_string()}{generate\_protocol\_string()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+generator.\+generate\+\_\+protocol\+\_\+string (\begin{DoxyParamCaption}\item[{}]{robot\+\_\+instructions }\end{DoxyParamCaption})}
+
+
+
+Used to generate the protocol. 
+
+Simply takes the robot instructions and concatenates them with all the required transpilers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\+\_\+instructions} & The robot instructions to add to the protocol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+protocol The concatenated protocol ready to be saved and executed on an Opentrons 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad9de9b4bec7cccbed6ab823608adccc2}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_ad9de9b4bec7cccbed6ab823608adccc2}} 
+\index{opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}!load\_transpiler\_file@{load\_transpiler\_file}}
+\index{load\_transpiler\_file@{load\_transpiler\_file}!opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}}
+\doxysubsubsection{\texorpdfstring{load\_transpiler\_file()}{load\_transpiler\_file()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+generator.\+load\+\_\+transpiler\+\_\+file (\begin{DoxyParamCaption}\item[{}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Used to load a transpiler file so as to concatenate it later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The name of the file to be grabbed from the transpiler directory (default\+: opentrons\+\_\+protocol\+\_\+generator/transpilers) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file\+\_\+data The loaded transpiler text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_a2c9f79677140451a7cd39329ee0b00bc}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_a2c9f79677140451a7cd39329ee0b00bc}} 
+\index{opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}!parse\_lists\_to\_objects@{parse\_lists\_to\_objects}}
+\index{parse\_lists\_to\_objects@{parse\_lists\_to\_objects}!opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}}
+\doxysubsubsection{\texorpdfstring{parse\_lists\_to\_objects()}{parse\_lists\_to\_objects()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+generator.\+parse\+\_\+lists\+\_\+to\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{robot\+\_\+instructions }\end{DoxyParamCaption})}
+
+
+
+Used to parse the robot instructions file into Opentrons compatible objects. 
+
+It is more convenient for our front end to use a list of objects for certain parameters in the instructions file (i.\+e. Liquid Classes). However this is not what is expected by the Opentrons. Thus we should parse such objects, remove front-\/end only fields and add any back-\/end only fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\+\_\+instructions} & The robot instructions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+robot\+\_\+instructions The parsed set of robot instructions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceopentrons__protocol__generator_1_1opentrons__generator_ac1072d5c6bfff16b6ff5b5462ebacccb}\label{namespaceopentrons__protocol__generator_1_1opentrons__generator_ac1072d5c6bfff16b6ff5b5462ebacccb}} 
+\index{opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!opentrons\_protocol\_generator.opentrons\_generator@{opentrons\_protocol\_generator.opentrons\_generator}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+generator.\+opentrons\+\_\+generator.\+pretty\+\_\+print (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+
+
+Used to replace a few incompatible phrases in the instructions file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The instruction raw text to be replaces \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+output The formatted instruction text compatible with Opentrons 
+\end{DoxyReturn}

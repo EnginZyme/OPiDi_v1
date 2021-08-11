@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted DeckSlotCard renders correctly 1`] = `
+<div
+  class="deck-slot-card"
+>
+  <labwareselectform-stub
+    index="10"
+  />
+   
+  <div
+    class="deck-slot-card__underlay deck-slot-card__underlay--deck-index"
+  >
+    
+      10
+    
+  </div>
+   
+  <div
+    class="deck-slot-card__overlay deck-slot-card__overlay--add-labware"
+  >
+    <p>
+      + Add Labware
+    </p>
+  </div>
+</div>
+`;

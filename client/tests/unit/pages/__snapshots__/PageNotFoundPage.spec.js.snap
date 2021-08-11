@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted PageNotFoundPage renders correctly 1`] = `
+<section
+  class="message_container"
+>
+  <p
+    class="error"
+  >
+    404
+  </p>
+   
+  <p
+    class="greeting"
+  >
+    Rough Day?
+  </p>
+   
+  <button
+    class="base_button medium_button_ go_home_button"
+    label="Go Home"
+  />
+</section>
+`;

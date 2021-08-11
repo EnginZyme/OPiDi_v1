@@ -1,0 +1,19 @@
+{
+    "type": "slack_message",
+    "description": "Send a slack message to a specific channel through a webhook",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+    },
+    "parameters": {
+        "webhook": {
+            "type": webhook_object,
+            "description": "Webhook URL, the address that identifies a specific channel in a slack workgroup",
+            "restrictions": "Option limited to a list from the webhooks config file"
+        },
+        "message": {
+            "type": string,
+            "description": "Text message sent to slack"
+        },
+    }
+}

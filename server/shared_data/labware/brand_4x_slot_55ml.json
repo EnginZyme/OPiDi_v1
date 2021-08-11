@@ -1,0 +1,106 @@
+{
+  "ordering": [
+    [
+      "A1"
+    ],
+    [
+      "A2"
+    ],
+    [
+      "A3"
+    ],
+    [
+      "A4"
+    ]
+  ],
+  "brand": {
+    "brand": "brand",
+    "brandId": [
+      "4_reservoir_55ml"
+    ]
+  },
+  "metadata": {
+    "displayName": "Brand 4x slot 55 mL",
+    "displayCategory": "reservoir",
+    "displayVolumeUnits": "µL",
+    "tags": []
+  },
+  "dimensions": {
+    "xDimension": 127.8,
+    "yDimension": 85.5,
+    "zDimension": 44
+  },
+  "schemaVersion": 2,
+  "version": 1,
+  "namespace": "custom_beta",
+  "wells": {
+    "A1": {
+      "depth": 40,
+      "totalLiquidVolume": 55000,
+      "shape": "rectangular",
+      "xDimension": 29,
+      "yDimension": 75.5,
+      "x": 19,
+      "y": 43,
+      "z": 4
+    },
+    "A2": {
+      "depth": 40,
+      "totalLiquidVolume": 55000,
+      "shape": "rectangular",
+      "xDimension": 29,
+      "yDimension": 75.5,
+      "x": 49,
+      "y": 43,
+      "z": 4
+    },
+    "A3": {
+      "depth": 40,
+      "totalLiquidVolume": 55000,
+      "shape": "rectangular",
+      "xDimension": 29,
+      "yDimension": 75.5,
+      "x": 79,
+      "y": 43,
+      "z": 4
+    },
+    "A4": {
+      "depth": 40,
+      "totalLiquidVolume": 55000,
+      "shape": "rectangular",
+      "xDimension": 29,
+      "yDimension": 75.5,
+      "x": 109,
+      "y": 43,
+      "z": 4
+    }
+  },
+  "parameters": {
+    "format": "irregular",
+    "quirks": [
+      "centerMultichannelOnWells",
+      "touchTipDisabled"
+    ],
+    "isTiprack": false,
+    "isMagneticModuleCompatible": false,
+    "loadName": "brand_4x_slot_55ml"
+  },
+  "groups": [
+    {
+      "metadata": {
+        "wellBottomShape": "flat"
+      },
+      "wells": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ]
+    }
+  ],
+  "cornerOffsetFromSlot": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}

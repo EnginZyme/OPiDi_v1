@@ -1,0 +1,30 @@
+{
+    "type": "timer",
+    "description": "Start or Pause a timer. The timer step can be used for a specific elapsed time before executing the next step",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+    },
+    "action": {
+        "start": {
+            "type": boolean,
+            "description": "If True starts the timer",
+            "restriction": "Only one action can be flagged as True on the step"
+        },
+        "pause": {
+            "type": boolean,
+            "description": "If True pauses the timer",
+            "restrictions": "Only one action can be flagged as True on the step"
+        },
+        "wait": {
+            "type": boolean,
+            "description": "If True the step is blocked until the timer value is larger than the elapsed_time attribute",
+            "restrictions": "Only one action can be flagged as True on the step",
+        }
+    },
+    "elapsed_time": {
+        "type": integer,
+        "description": "Elapsed time in seconds to compare against the starting time in the wait action",
+        "restrictions": "Positive integer"
+    }
+}

@@ -1,0 +1,138 @@
+\hypertarget{classbioshake__3000T_1_1Shaker}{}\doxysection{bioshake\+\_\+3000\+T.\+Shaker Class Reference}
+\label{classbioshake__3000T_1_1Shaker}\index{bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}}
+
+
+A class for defining QInstruments Bio\+Shake 3000T specific commands.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbioshake__3000T_1_1Shaker_a4feb21436d3b9542d5f8aa850ef6ae51}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classbioshake__3000T_1_1Shaker_a21778db94c45166e97ae5b403fc861f2}{serial}})
+\begin{DoxyCompactList}\small\item\em Assign the serial port to the class and Leave Eco Mode for the shaker. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classbioshake__3000T_1_1Shaker_a8a7e17aa0f0eef26cc65a965c36beee6}{write}} (self, cmd)
+\begin{DoxyCompactList}\small\item\em Write a command to the shaker, and try to read and return the response. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classbioshake__3000T_1_1Shaker_a51c0646082bceb2ae41b6ad3ad83c69f}{start\+\_\+run}} (self, rpm, duration)
+\begin{DoxyCompactList}\small\item\em Start a shaker run with at a set speed for a duration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_afe6205cf59639d8a85dd0c14c67f5be4}\label{classbioshake__3000T_1_1Shaker_afe6205cf59639d8a85dd0c14c67f5be4}} 
+def {\bfseries check\+\_\+state} (self)
+\begin{DoxyCompactList}\small\item\em Get shaker information such as state, Temperature, setpoint and save to response member variable. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classbioshake__3000T_1_1Shaker_a9d954f2b607ea60e6960a52d81eb66ed}{is\+\_\+shaker\+\_\+home}} (self)
+\begin{DoxyCompactList}\small\item\em Check if the shaker is in \char`\"{}home\char`\"{} state and return boolean. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classbioshake__3000T_1_1Shaker_ad047b54829f9ec84b6905e3785fa9a9b}{start\+\_\+temp\+\_\+control}} (self, setpoint)
+\begin{DoxyCompactList}\small\item\em Set the shaker to the setpoint provided and start temperature tracking. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a9fb3b752c16d9fedb5fa821ddf95f802}\label{classbioshake__3000T_1_1Shaker_a9fb3b752c16d9fedb5fa821ddf95f802}} 
+def {\bfseries stop\+\_\+temp\+\_\+control} (self)
+\begin{DoxyCompactList}\small\item\em Stop shaker temperature tracking. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_af015c2cfdb14ecfabdc735242de5c408}\label{classbioshake__3000T_1_1Shaker_af015c2cfdb14ecfabdc735242de5c408}} 
+def {\bfseries get\+\_\+responses} (self)
+\begin{DoxyCompactList}\small\item\em Getter for the responses member to check that it worked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a3b570bee59982b1923adff3fd2db8748}\label{classbioshake__3000T_1_1Shaker_a3b570bee59982b1923adff3fd2db8748}} 
+def {\bfseries stop} (self)
+\begin{DoxyCompactList}\small\item\em Stop the shaker shaking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a21778db94c45166e97ae5b403fc861f2}\label{classbioshake__3000T_1_1Shaker_a21778db94c45166e97ae5b403fc861f2}} 
+{\bfseries serial}
+\begin{DoxyCompactList}\small\item\em The current shaker serial port object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a12ac08c0cb5eb8872ca596d6adf7783c}\label{classbioshake__3000T_1_1Shaker_a12ac08c0cb5eb8872ca596d6adf7783c}} 
+{\bfseries response}
+\begin{DoxyCompactList}\small\item\em Contains the shaker response for any commands sent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for defining QInstruments Bio\+Shake 3000T specific commands. 
+
+\begin{DoxyVerb}Contains functions to communicate with the shaker over serial as well as
+support for shaker responses
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a4feb21436d3b9542d5f8aa850ef6ae51}\label{classbioshake__3000T_1_1Shaker_a4feb21436d3b9542d5f8aa850ef6ae51}} 
+\index{bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def bioshake\+\_\+3000\+T.\+Shaker.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{serial }\end{DoxyParamCaption})}
+
+
+
+Assign the serial port to the class and Leave Eco Mode for the shaker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em serial} & The opened serial port for the shaker \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a9d954f2b607ea60e6960a52d81eb66ed}\label{classbioshake__3000T_1_1Shaker_a9d954f2b607ea60e6960a52d81eb66ed}} 
+\index{bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}!is\_shaker\_home@{is\_shaker\_home}}
+\index{is\_shaker\_home@{is\_shaker\_home}!bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}}
+\doxysubsubsection{\texorpdfstring{is\_shaker\_home()}{is\_shaker\_home()}}
+{\footnotesize\ttfamily def bioshake\+\_\+3000\+T.\+Shaker.\+is\+\_\+shaker\+\_\+home (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Check if the shaker is in \char`\"{}home\char`\"{} state and return boolean. 
+
+\begin{DoxyReturn}{Returns}
+True if \char`\"{}home\char`\"{} else False. Serial Error or no response also return false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a51c0646082bceb2ae41b6ad3ad83c69f}\label{classbioshake__3000T_1_1Shaker_a51c0646082bceb2ae41b6ad3ad83c69f}} 
+\index{bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}!start\_run@{start\_run}}
+\index{start\_run@{start\_run}!bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}}
+\doxysubsubsection{\texorpdfstring{start\_run()}{start\_run()}}
+{\footnotesize\ttfamily def bioshake\+\_\+3000\+T.\+Shaker.\+start\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{rpm,  }\item[{}]{duration }\end{DoxyParamCaption})}
+
+
+
+Start a shaker run with at a set speed for a duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rpm} & \mbox{\hyperlink{classbioshake__3000T_1_1Shaker}{Shaker}} speed \\
+\hline
+{\em duration} & Duration for shaking \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_ad047b54829f9ec84b6905e3785fa9a9b}\label{classbioshake__3000T_1_1Shaker_ad047b54829f9ec84b6905e3785fa9a9b}} 
+\index{bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}!start\_temp\_control@{start\_temp\_control}}
+\index{start\_temp\_control@{start\_temp\_control}!bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}}
+\doxysubsubsection{\texorpdfstring{start\_temp\_control()}{start\_temp\_control()}}
+{\footnotesize\ttfamily def bioshake\+\_\+3000\+T.\+Shaker.\+start\+\_\+temp\+\_\+control (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{setpoint }\end{DoxyParamCaption})}
+
+
+
+Set the shaker to the setpoint provided and start temperature tracking. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setpoint} & The value for the shaker setpoint \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbioshake__3000T_1_1Shaker_a8a7e17aa0f0eef26cc65a965c36beee6}\label{classbioshake__3000T_1_1Shaker_a8a7e17aa0f0eef26cc65a965c36beee6}} 
+\index{bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}!write@{write}}
+\index{write@{write}!bioshake\_3000T.Shaker@{bioshake\_3000T.Shaker}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def bioshake\+\_\+3000\+T.\+Shaker.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cmd }\end{DoxyParamCaption})}
+
+
+
+Write a command to the shaker, and try to read and return the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to send to shaker\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the decoded response from the shaker 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+opentrons\+\_\+protocol\+\_\+generator/transpilers/bioshake\+\_\+3000\+T.\+py\end{DoxyCompactItemize}

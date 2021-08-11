@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted GenerateView renders correctly 1`] = `
+<div>
+  <div
+    class="generate_view"
+  >
+    <div
+      class="generate_view__header"
+    >
+      <div
+        class="generate_view__header__title"
+      >
+        <span
+          class="generate_view__header__title__text"
+        >
+          Generate
+        </span>
+      </div>
+    </div>
+     
+    <div
+      class="generate_view__body"
+    >
+      <div
+        class="generate_view__body__header"
+      >
+        <div
+          class="generate_view__body__header__button_group"
+        >
+          <progressspinner
+            animationduration=".5s"
+            class="spinner"
+            strokewidth="8"
+            style="display: none;"
+          />
+           
+          <button
+            class="base_button_white medium_button_"
+            label="Get Protocol Design File"
+          />
+           
+          <button
+            class="base_button_white medium_button_"
+            label="Preview Steps"
+          />
+           
+          <button
+            class="base_button_white medium_button_"
+            label="Get Robot Protocol"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="generate_view__body__simulation_view"
+      >
+        <div
+          class="generate_view__body__simulation_view__content"
+        >
+          <ul
+            class="generate_view__body__simulation_view__list"
+            style="display: none;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

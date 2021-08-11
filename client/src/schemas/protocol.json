@@ -1,0 +1,387 @@
+{
+  "description": "Protocol Object Schema",
+  "definitions": {
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    },
+    "pipette": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "is_multichannel": {
+          "type": "boolean"
+        }
+      }
+    },
+    "tiprack": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 11
+    },
+    "positioned_pipette": {
+      "type": "object",
+      "properties": {
+        "pipette": {
+          "$ref": "#/definitions/pipette"
+        },
+        "tipracks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/tiprack"
+          },
+          "default": []
+        }
+      }
+    },
+    "deck_slot": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "labware_name": {
+          "type": "string"
+        },
+        "labware_type": {
+          "type": "string"
+        },
+        "labware_id": {
+          "type": "string"
+        },
+        "nickname": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    },
+    "liquid_class_config_object_mix": {
+      "type": "object",
+      "properties": {
+        "repetitions": {
+          "type": "integer"
+        },
+        "volume": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "repetitions",
+        "volume"
+      ]
+    },
+    "liquid_class_config_object": {
+      "type": "object",
+      "properties": {
+        "touch_tip": {
+          "type": "boolean"
+        },
+        "blow_out": {
+          "type": "boolean"
+        },
+        "carryover": {
+          "type": "boolean"
+        },
+        "air_gap": {
+          "type": "integer"
+        },
+        "blowout_location": {
+          "type": "string"
+        },
+        "mix_before": {
+          "$ref": "#/definitions/liquid_class_config_object_mix"
+        },
+        "mix_after": {
+          "$ref": "#/definitions/liquid_class_config_object_mix"
+        },
+        "aspirate_rate": {
+          "type": "integer"
+        },
+        "dispense_rate": {
+          "type": "integer"
+        },
+        "blow_out_rate": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "touch_tip",
+        "blow_out",
+        "carryover",
+        "air_gap",
+        "blowout_location",
+        "mix_before",
+        "mix_after",
+        "aspirate_rate",
+        "dispense_rate",
+        "blow_out_rate"
+      ]
+    },
+    "liquid_class": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "liquid_config_object": {
+          "$ref": "#/definitions/liquid_class_config_object"
+        }
+      },
+      "required": [
+        "name",
+        "id",
+        "liquid_config_object"
+      ]
+    },
+    "sequence_location_offset": {
+      "type": "object",
+      "properties": {
+        "offset_type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "offset_type",
+        "value"
+      ]
+    },
+    "sequence_location_well": {
+      "type": "string"
+    },
+    "sequence_location": {
+      "type": "object",
+      "properties": {
+        "slot_number": {
+          "type": "integer"
+        },
+        "slot_name": {
+          "type": "string"
+        },
+        "offset": {
+          "$ref": "#/definitions/sequence_location_offset"
+        },
+        "wells": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "#/definitions/sequence_location_well"
+            }
+          ]
+        }
+      }
+    },
+    "sequence": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "locations": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "#/definitions/sequence_location"
+            }
+          ]
+        },
+        "locationCounter": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "locations",
+        "locationCounter"
+      ]
+    },
+    "step": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "substeps": {
+          "type": "array",
+          "items": [
+            {"$ref": "#/definitions/step"}
+          ],
+          "default": []
+        },
+        "parameters": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "author": {
+          "$ref": "#/definitions/author"
+        },
+        "is_verified": {
+          "type": "boolean"
+        },
+        "is_shared": {
+          "type": "boolean"
+        },
+        "created": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "author",
+        "is_verified",
+        "is_shared",
+        "created"
+      ]
+    },
+    "deck": {
+      "type": "object",
+      "properties": {
+        "left_pipette": {
+          "$ref": "#/definitions/positioned_pipette"
+        },
+        "right_pipette": {
+          "$ref": "#/definitions/positioned_pipette"
+        },
+        "slots": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "2": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "3": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "4": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "5": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "6": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "7": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "8": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "9": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "10": {
+              "$ref": "#/definitions/deck_slot"
+            },
+            "11": {
+              "$ref": "#/definitions/deck_slot"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ]
+        }
+      },
+      "required": [
+        "left_pipette",
+        "right_pipette",
+        "slots"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/step"
+      }
+    },
+    "liquid_classes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/liquid_class"
+      }
+    },
+    "sequences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/sequence"
+      }
+    },
+    "stepCounter": {
+      "type": "integer"
+    },
+    "sequenceCounter": {
+      "type": "integer"
+    },
+    "liquidClassCounter": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "metadata",
+    "deck",
+    "steps",
+    "liquid_classes",
+    "sequences",
+    "stepCounter",
+    "sequenceCounter",
+    "liquidClassCounter"
+  ]
+}

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted UserAvatarMenu renders correctly 1`] = `
+<div
+  class="user_avatar_menu"
+>
+  <overlaypanel
+    appendto="body"
+    class="user_avatar_menu__overlay"
+  >
+    <signoutview-stub />
+  </overlaypanel>
+   
+  <div
+    aria:haspopup="true"
+    id="user_avatar_menu__toggle_button"
+  >
+    <useravatarimage-stub
+      size="small"
+    />
+  </div>
+</div>
+`;

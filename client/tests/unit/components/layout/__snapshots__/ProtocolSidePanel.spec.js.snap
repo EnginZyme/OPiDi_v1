@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ProtocolSidePanel renders correctly 1`] = `
+<div>
+  <div
+    class="protocol_side_panel"
+  >
+    <div
+      class="protocol_side_panel__grid"
+    >
+      <span
+        class="protocol_side_panel__title"
+      >
+         Protocol 
+      </span>
+    </div>
+     
+    <div
+      class="protocol_side_panel__button_group"
+    >
+      <div
+        class="protocol_side_panel__grid"
+      >
+        <button
+          class="base_button large_button_"
+          label="Explore"
+        />
+         
+        <button
+          class="base_button large_button_"
+          label="Create New"
+        />
+      </div>
+       
+      <div
+        class="protocol_side_panel__grid"
+      >
+        <button
+          class="base_button large_button_"
+          for="uploadmyfile"
+          label="Import"
+        />
+      </div>
+       
+      <input
+        accept="application/json"
+        id="uploadmyfile"
+        type="file"
+      />
+    </div>
+  </div>
+</div>
+`;

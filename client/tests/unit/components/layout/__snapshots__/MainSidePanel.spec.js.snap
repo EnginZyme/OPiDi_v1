@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted MainSidePanel renders correctly 1`] = `
+<div>
+  <div
+    class="function_nav_bar"
+  >
+    <div
+      class="function_nav_bar__grid"
+    >
+      <img
+        alt="EnginZyme Logo"
+        src="../../assets/logo_light.svg"
+      />
+    </div>
+     
+    <div />
+     
+    <div
+      class="function_nav_bar__grid"
+    >
+      <useravatarmenu-stub />
+    </div>
+  </div>
+</div>
+`;

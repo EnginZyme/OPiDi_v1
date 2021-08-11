@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted PauseConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Pause
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Step Name
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Pause Time (Seconds)
+        
+        </p>
+         
+        <inputnumber
+          class="step_config_form__body__content__input--short"
+          max="999999"
+          min="1"
+        />
+      </div>
+       
+      <div>
+        <selectbutton
+          class="step_config_form__body__content__toggle_button"
+          optionlabel="name"
+          options="[object Object],[object Object]"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

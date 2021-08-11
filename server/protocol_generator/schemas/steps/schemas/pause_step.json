@@ -1,0 +1,19 @@
+{
+    "type": "pause",
+    "description": "Pause / Delay step. The robot stops and waits for user input (Pause) or elapsed time (Delay)",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+    },
+    "parameters": {
+        "auto_resume":{
+            "type": boolean,
+            "description": "Delay Step if True (and pause time attribute comes relevant). Pause step if False (and waits for user input)"
+        },
+        "pause_time": {
+            "type": integer,
+            "description": "Delay time in seconds",
+            "restrictions": "Positive integers with range 1 to 999999"
+        },
+    }
+}

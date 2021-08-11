@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guide | Protocol Designer</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Web app for creating Opentrons protocols">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.7a559e10.js" as="script"><link rel="preload" href="/assets/js/2.5e61301f.js" as="script"><link rel="preload" href="/assets/js/8.578fc4eb.js" as="script"><link rel="prefetch" href="/assets/js/10.cb4e92ba.js"><link rel="prefetch" href="/assets/js/11.e282dac6.js"><link rel="prefetch" href="/assets/js/12.e0604f76.js"><link rel="prefetch" href="/assets/js/13.fb3c98c7.js"><link rel="prefetch" href="/assets/js/14.775aa8f4.js"><link rel="prefetch" href="/assets/js/15.cc3d1cfe.js"><link rel="prefetch" href="/assets/js/16.1b1e873d.js"><link rel="prefetch" href="/assets/js/17.12cec36d.js"><link rel="prefetch" href="/assets/js/18.2ef00fb1.js"><link rel="prefetch" href="/assets/js/19.1acf24e1.js"><link rel="prefetch" href="/assets/js/20.51ade035.js"><link rel="prefetch" href="/assets/js/21.aea97cd5.js"><link rel="prefetch" href="/assets/js/22.d2a50fb9.js"><link rel="prefetch" href="/assets/js/23.21a158f7.js"><link rel="prefetch" href="/assets/js/24.ea91177d.js"><link rel="prefetch" href="/assets/js/25.9f8e9762.js"><link rel="prefetch" href="/assets/js/26.d7de1745.js"><link rel="prefetch" href="/assets/js/27.d8f25aec.js"><link rel="prefetch" href="/assets/js/28.88a49ea1.js"><link rel="prefetch" href="/assets/js/29.6f4d875a.js"><link rel="prefetch" href="/assets/js/3.e154858e.js"><link rel="prefetch" href="/assets/js/30.a4b05989.js"><link rel="prefetch" href="/assets/js/31.4aa67bc0.js"><link rel="prefetch" href="/assets/js/32.89e4a823.js"><link rel="prefetch" href="/assets/js/33.3555f719.js"><link rel="prefetch" href="/assets/js/34.a4770fa4.js"><link rel="prefetch" href="/assets/js/35.7bc435e0.js"><link rel="prefetch" href="/assets/js/36.d15192af.js"><link rel="prefetch" href="/assets/js/37.9a85b076.js"><link rel="prefetch" href="/assets/js/38.3cd0c69a.js"><link rel="prefetch" href="/assets/js/39.34d09e61.js"><link rel="prefetch" href="/assets/js/4.03a82865.js"><link rel="prefetch" href="/assets/js/40.fe815548.js"><link rel="prefetch" href="/assets/js/41.6fab3519.js"><link rel="prefetch" href="/assets/js/42.c9dcd7de.js"><link rel="prefetch" href="/assets/js/43.be9a72ac.js"><link rel="prefetch" href="/assets/js/44.1d9679de.js"><link rel="prefetch" href="/assets/js/45.10d752c8.js"><link rel="prefetch" href="/assets/js/46.6f5227d0.js"><link rel="prefetch" href="/assets/js/5.e17fbb3b.js"><link rel="prefetch" href="/assets/js/6.3669da44.js"><link rel="prefetch" href="/assets/js/7.26deafd8.js"><link rel="prefetch" href="/assets/js/9.622bfcaf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">Protocol Designer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="active sidebar-link">Guide</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/#introduction" class="sidebar-link">Introduction</a></li><li class="sidebar-sub-header"><a href="/#architectural-overview" class="sidebar-link">Architectural Overview</a></li><li class="sidebar-sub-header"><a href="/#development" class="sidebar-link">Development</a></li><li class="sidebar-sub-header"><a href="/#distribution" class="sidebar-link">Distribution</a></li><li class="sidebar-sub-header"><a href="/#directory-structure" class="sidebar-link">Directory Structure</a></li><li class="sidebar-sub-header"><a href="/#maintainer-s" class="sidebar-link">Maintainer(s)</a></li></ul></li><li><a href="/FORM_DATA_REACTIVITY.html" class="sidebar-link">Form Data Reactivity</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Base</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Forms</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Layout</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Views</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="guide"><a href="#guide" class="header-anchor">#</a> Guide</h1> <h2 id="introduction"><a href="#introduction" class="header-anchor">#</a> Introduction</h2> <blockquote><p>This project is about a web app that can be used to easily create, use, and share unambiguously specified laboratory protocols which are reproducible, flexible, configurable, and consistent.</p> <p>These protocols are currently used to specify robot operations on the Opentrons platform. In the future, it can also be used for specifying robot operations on other manufacturers' platform (eg. Flowbot, Hamilton).</p> <p>Google is used as the identity provider for the authentication layer of this web app. As a result users will first have to sign in via their EnginZyme email addresses before they gain access to it.</p> <p>The workflow in the app consists of creating, importing, or viewing an existing protocol. Either of these actions require that you follow up with the following steps:</p> <ul><li>Setup the robot deck with labware, pipette, and tiprack choices</li> <li>Optionally create location sequences to be used in sequence transfer steps</li> <li>Specify the desired robot operations in steps</li> <li>Export the underlying protocol object</li> <li>Simulate the protocol to generate text output with which you may verify that the protocol will run correctly on the robot.</li> <li>Generate the corresponding robot specific protocol file (a Python file in the case of the Opentrons bot) to be run on the hardware.</li></ul> <p>The user is enabled to mark a protocol as being &quot;verified&quot; upon actual verification via a test-run. The user is also enabled to share their protocol within a shared space provided by the web app.
+Further, the user can save changes made to a protocol, clone that protocol, or delete it entirely.</p> <p>The development version of this web app is accessible <a href="http://protocol-designer-spa-test.s3-website.eu-north-1.amazonaws.com/" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>The production version of this web app is accessible <a href="http://protocol-designer-spa.s3-website.eu-north-1.amazonaws.com/" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h2 id="architectural-overview"><a href="#architectural-overview" class="header-anchor">#</a> Architectural Overview</h2> <p><img src="public/assets/opd_architecture.png" alt="opd_architecture.png"></p> <blockquote><p>The web app depends on the <a href="https://gitlab.com/enginzyme/protocol-objects-api" target="_blank" rel="noopener noreferrer">protocol objects API<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (hosted in an AWS EC2 instance managed by an AWS ElasticBeanstalk instance) for persistence and CRUD operations on created protocols and protocol dependencies such as labware, and pipette data. The protocol objects API sits a-top a protocol objects DB (provisioned as an AWS RDS instance).</p> <p>The web app also depends on the <a href="https://gitlab.com/enginzyme/opentrons-protocol-generator" target="_blank" rel="noopener noreferrer">Opentrons protocol generator service<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to either simulate protocol specifications sent from the web app, or to generate the Opentrons robot specific equivalent of the protocol.</p> <p>For our purposes, some user activity is logged and tracked on <a href="https://eu-north-1.console.aws.amazon.com/cloudwatch/home?region=eu-north-1#logsV2:log-groups/log-group/ProtocolDesignerSPA-test/log-events/UserActivity" target="_blank" rel="noopener noreferrer">AWS CloudWatch<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. Such activity include:</p> <ul><li>Creating a protocol</li> <li>Cloning a protocol</li> <li>Deleting a protocol</li> <li>Simulating a protocol</li> <li>Generating the corresponding robot platform specific protocol file.</li></ul></blockquote> <h2 id="development"><a href="#development" class="header-anchor">#</a> Development</h2> <div class="language- extra-class"><pre class="language-text"><code># Clone project
+$ git clone https://gitlab.com/enginzyme/Protocol-Designer-SPA.git
+
+# Install dependencies
+$ npm install
+
+# Run local dev server
+$ npm run serve
+</code></pre></div><p>Visit in browser: <a href="http://localhost:8081/" target="_blank" rel="noopener noreferrer">http://localhost:8081<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="distribution"><a href="#distribution" class="header-anchor">#</a> Distribution</h2> <p>Follow the guide <a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to download the AWS CLI tool.</p> <div class="language- extra-class"><pre class="language-text"><code># Setup AWS CLI
+$ aws configure
+AWS Access Key ID [None]: &lt;your-access-key&gt;
+AWS Secret Access Key [None]: &lt;your-access-key&gt;
+Default region name [None]: eu-north-1
+Default output format [None]: json
+
+# Build/deploy development web app
+$ git checkout develop
+$ git pull
+$ npm run build
+$ npm run deploy
+
+# Build/deploy production web app
+$ git checkout master
+$ git pull
+$ npm run build
+$ npm run deploy-prod
+</code></pre></div><h2 id="directory-structure"><a href="#directory-structure" class="header-anchor">#</a> Directory Structure</h2> <div class="language- extra-class"><pre class="language-text"><code>│   .gitignore                                    // gitignore
+│   babel.config.js                               // babel-loader config
+│   genDocs.cmd                                   // script to generate docs
+│   package.json                                  // package.json
+│
+├───docs                                          // contains a replica of the project structure but for documentation
+│
+├───public                                        // Webpack root directory
+│
+└───src                                           // source code
+    │   App.vue                                   // entry view
+    │   globalStyles.css                          // global styles
+    │   main.js                                   // entry for loading components, initialization
+    │   urls.js                                   // URLs for remote APIs
+    │
+    ├───assets                                    // static image resources
+    │
+    ├───components                                // global public components
+    │   ├───base                                  // components with basic logic
+    │   │
+    │   ├───forms                                 // components that accept user input
+    │   │
+    │   ├───layout                                // components that are static across views
+    │   │
+    │   └───views                                 // components that represent bounded contexts for this project
+    │
+    ├───pages                                     // pages
+    │
+    ├───router                                    // router
+    │
+    ├───schemas                                   // versions of the protocol object schemas
+    │
+    ├───store                                     // global status management
+    │   │   index.js                              // main entry point
+    │   │
+    │   ├───defaultData                           // contains intial states of store modules
+    │   │
+    │   └───modules                               // store modules
+    │
+    ├───types                                     // action and mutation types used in the store
+    │
+    └───utils                                     // global public functions
+</code></pre></div><h2 id="maintainer-s"><a href="#maintainer-s" class="header-anchor">#</a> Maintainer(s)</h2> <blockquote><p>tobi@enginzyme.com</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/FORM_DATA_REACTIVITY.html">
+        Form Data Reactivity
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7a559e10.js" defer></script><script src="/assets/js/2.5e61301f.js" defer></script><script src="/assets/js/8.578fc4eb.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted LiquidClassConfigForm renders correctly 1`] = `
+<div
+  class="liquid_class_form"
+>
+  <div
+    class="liquid_class_form__body"
+  >
+    <div
+      class="liquid_class_form__body__content"
+    >
+      <div>
+        <p
+          class="liquid_class_form__body__content__label--medium"
+        >
+          Name
+        </p>
+         
+        <inputtext
+          class="liquid_class_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div
+        class="liquid_class_form__body__content__field_group"
+      >
+        <div>
+          <p
+            class="liquid_class_form__body__content__label--medium"
+          >
+            
+            Blow Out
+          
+          </p>
+           
+          <dropdown
+            class="liquid_class_form__body__content__dropdown"
+            optionlabel="name"
+            options="[object Object],[object Object]"
+            placeholder="Select option"
+          />
+        </div>
+         
+        <div>
+          <p
+            class="liquid_class_form__body__content__label--medium"
+          >
+            
+            Touch Tip
+          
+          </p>
+           
+          <dropdown
+            class="liquid_class_form__body__content__dropdown"
+            optionlabel="name"
+            options="[object Object],[object Object]"
+            placeholder="Select option"
+          />
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="liquid_class_form__body__content__label--medium"
+        >
+          
+          Air Gap (μL)
+        
+        </p>
+         
+        <inputnumber
+          class="liquid_class_form__body__content__input--long"
+          maxfractiondigits="5"
+          min="0"
+          minfractiondigits="2"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="liquid_class_form__body__content__label--medium"
+        >
+          
+          Blow Out Location
+        
+        </p>
+         
+        <dropdown
+          class="liquid_class_form__body__content__dropdown--stretch"
+          optionlabel="name"
+          options="[object Object],[object Object],[object Object]"
+          placeholder="Select option"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="liquid_class_form__body__content__label--medium"
+        >
+          
+          Mix Before
+        
+        </p>
+         
+        <div
+          class="liquid_class_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Repetitions
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              min="0"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Volume (μL)
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              maxfractiondigits="5"
+              min="0"
+              minfractiondigits="2"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="liquid_class_form__body__content__label--medium"
+        >
+          
+          Mix After
+        
+        </p>
+         
+        <div
+          class="liquid_class_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Repetitions
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              min="0"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Volume (μL)
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              maxfractiondigits="5"
+              min="0"
+              minfractiondigits="2"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <p
+          class="liquid_class_form__body__content__label--medium"
+        >
+          
+          Pipette Rates
+        
+        </p>
+         
+        <div
+          class="liquid_class_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Aspirate Rate
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              max="2"
+              maxfractiondigits="1"
+              min="0.1"
+              minfractiondigits="1"
+              step="0.1"
+            />
+          </div>
+           
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Dispense Rate
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              max="2"
+              maxfractiondigits="1"
+              min="0.1"
+              minfractiondigits="1"
+              step="0.1"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <div>
+        <div
+          class="liquid_class_form__body__content__field_group"
+        >
+          <div>
+            <p
+              class="liquid_class_form__body__content__label--min"
+            >
+              
+              Blow-Out Rate
+            
+            </p>
+             
+            <inputnumber
+              class="liquid_class_form__body__content__input--short"
+              max="2"
+              maxfractiondigits="1"
+              min="0.1"
+              minfractiondigits="1"
+              step="0.1"
+            />
+          </div>
+           
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

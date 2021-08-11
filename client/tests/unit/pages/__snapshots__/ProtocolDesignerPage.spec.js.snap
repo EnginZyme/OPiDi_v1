@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ProtocolDesignerPage renders correctly 1`] = `
+<div
+  class="main_container"
+>
+  <mainsidepanel-stub />
+   
+  <router-view
+    id="left_side_panel"
+    name="LeftSidePanel"
+  />
+   
+  <div
+    class="secondary_container"
+  >
+    <router-view
+      id="top_nav_bar"
+      name="TopNavBar"
+    />
+     
+    <router-view
+      id="display_view"
+      name="DisplayView"
+    />
+  </div>
+</div>
+`;

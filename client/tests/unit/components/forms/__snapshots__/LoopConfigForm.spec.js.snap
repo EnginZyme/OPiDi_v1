@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted LoopConfigForm renders correctly 1`] = `
+<div
+  class="step_config_form"
+>
+  <p
+    class="step_config_form__title"
+  >
+    Loop
+  </p>
+   
+  <div
+    class="step_config_form__body"
+  >
+    <div
+      class="step_config_form__body__content"
+    >
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Step Name
+        
+        </p>
+         
+        <inputtext
+          class="step_config_form__body__content__input--long"
+          type="text"
+        />
+      </div>
+       
+      <div>
+        <p
+          class="step_config_form__body__content__label--medium"
+        >
+          
+          Number of Loops
+        
+        </p>
+         
+        <inputnumber
+          class="step_config_form__body__content__input--short"
+          min="1"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

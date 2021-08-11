@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted MultiWellSelectionForm renders correctly 1`] = `
+<dialog
+  header="Well Selection (Multi Channel)"
+  modal="true"
+  style="min-width: 40vw; max-width: 75vw;"
+  visible="visible"
+>
+  <br />
+   
+  <div
+    class="well_selection_form__info_section"
+  >
+    <p>
+      <span>
+        Click to select or deselect a column
+      </span>
+    </p>
+     
+    <p>
+      <b>
+        Note
+      </b>
+      : The order you click on the wells is the order that the OT robot
+      will make the transfers.
+    
+    </p>
+  </div>
+   
+  <div
+    class="well_selection_form__wells_container"
+  >
+    <div
+      class="well_selection_form__wells"
+      style="grid-template-columns: repeat(8, 3.5em);"
+    >
+      <p />
+       
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          1
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          2
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          3
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          4
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          5
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          6
+        
+      </p>
+       
+      <p />
+       
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+            A
+          
+      </p>
+       
+      <div
+        class="picked"
+        id="A1"
+      />
+       
+      <!---->
+      <!---->
+       
+      <div
+        class=""
+        id="A2"
+      />
+       
+      <!---->
+      <!---->
+       
+      <div
+        class=""
+        id="A3"
+      />
+       
+      <!---->
+      <!---->
+       
+      <div
+        class=""
+        id="A4"
+      />
+       
+      <!---->
+      <!---->
+       
+      <div
+        class=""
+        id="A5"
+      />
+       
+      <!---->
+      <!---->
+       
+      <div
+        class=""
+        id="A6"
+      />
+       
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+            A
+          
+      </p>
+       
+      <p />
+       
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          1
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          2
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          3
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          4
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          5
+        
+      </p>
+      <p
+        class="well_selection_form__wells_container__label"
+      >
+        
+          6
+        
+      </p>
+       
+      <p />
+    </div>
+  </div>
+</dialog>
+`;

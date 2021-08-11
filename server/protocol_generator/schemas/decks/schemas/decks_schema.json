@@ -1,0 +1,59 @@
+{
+  "left_pipette":{
+      "pipette": {
+        "type": pipette_object
+        "description": "A pipette as defined in the pipettes_schema",
+        "example":{
+          "name": "Single Channel 300 uL - Gen 1",
+          "id": "p300_single"
+        }
+      },
+      "tipracks": {
+        "type": [integers],
+        "description": "List of integers (range 1 to 11)  representing the slots where the tipracks associated with this pipette are located",
+        "required": "At least 1 of them is required if the pipette is not null",
+        "restrictions": "Only slots with tipracks have be added to this list. A tiprack slot can only be added to one pipette.",
+        "example": [10]
+      }
+    },
+
+  "right_pipette": {
+      "pipette": null,
+      "tipracks": null
+  },
+
+  "slots": {
+    "1": {
+      "name": {
+        "type": String,
+        "description": "Label used to easily identify a labware"
+      },
+      "labware_id": {
+        "type": String,
+        "description": "Id matching the labware registry in the robot."
+      },
+      "is_tiprack": {
+        "type": Boolean.,
+        "description": "A flag that quickly identifies if a labware is a tiprack"
+      }
+    }
+    "2": {
+          "name": "Samples",
+          "labware_id": "corning_96_wellplate_360ul_flat",
+          "is_tiprack": false
+      },
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": {
+          "name": "Tiprack1",
+          "labware_id": "opentrons_96_tiprack_300ul",
+          "is_tiprack": true
+      },,
+      "11": null
+  }
+}

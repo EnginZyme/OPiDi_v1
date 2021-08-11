@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted ProtocolFileBanner renders correctly 1`] = `
+<div
+  class="protocol-file-banner"
+>
+  <div
+    class="protocol-file-banner__file-name"
+  >
+    sample-protocol-name
+  </div>
+   
+  <div
+    class="protocol-file-banner__author-name"
+  >
+     sample-protocol-author-name
+  </div>
+</div>
+`;

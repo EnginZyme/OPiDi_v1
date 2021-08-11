@@ -1,0 +1,41 @@
+{
+    "type": "bioshake_3000t",
+    "description": "Bioshake 3000T control step, including shaking and temperature control",
+    "name": {
+        "type": string,
+        "description": "Custom label given to identify the step"
+    },
+    "parameters": {
+        'speed': {
+            "type": integer,
+            "description": "Shaking speed in rpm",
+            "restriction": "Positive integers ranging from 0 to 3000"
+        },
+        'setpoint': {
+            "type": float,
+            "description": "Temperature in celsius for the heater control",
+            "restriction": "Positive integers ranging from 0 to 99"
+        },
+        'tempControl': {
+            "type": boolean,
+            "description": "Enables temperature control in this step"
+        },
+        "cooldown": {
+            "type": boolean,
+            "description": "Stops temperature control at the end of the step"
+        },
+        "duration": {
+            "type": integer,
+            "description": "Shaking duration in seconds",
+            "restriction": "Positive integers ranging from 1 to 999999"
+        },
+        "wait_for_stop": {
+            "type": boolean,
+            "description": "If True the step will lock the protocol waiting for the shakers stop-home signal"
+        },
+        "force_stop": {
+            "type": boolean,
+            "description": "If True a signal is sent to immediately stop the shaker"
+        }
+    }
+}

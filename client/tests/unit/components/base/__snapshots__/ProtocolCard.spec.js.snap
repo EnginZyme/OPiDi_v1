@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted Unverified ProtocolCard renders correctly 1`] = `
+<div
+  class="protocol-card protocol-card--not-verified"
+>
+  <p
+    class="protocol-card__protocol-name"
+  >
+    protocol-metadata-name
+  </p>
+   
+  <p
+    class="protocol-card__protocol-description"
+  >
+    protocol-metadata-description
+  </p>
+   
+  <p
+    class="protocol-card__protocol-author"
+  >
+    f. bar
+  </p>
+</div>
+`;
+
+exports[`shallowMounted Verified ProtocolCard renders correctly 1`] = `
+<div
+  class="protocol-card protocol-card--verified"
+>
+  <p
+    class="protocol-card__protocol-name"
+  >
+    protocol-metadata-name
+  </p>
+   
+  <p
+    class="protocol-card__protocol-description"
+  >
+    protocol-metadata-description
+  </p>
+   
+  <p
+    class="protocol-card__protocol-author"
+  >
+    f. bar
+  </p>
+</div>
+`;

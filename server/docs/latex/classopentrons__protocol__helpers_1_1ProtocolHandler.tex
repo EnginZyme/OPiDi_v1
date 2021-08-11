@@ -1,0 +1,147 @@
+\hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler}{}\doxysection{opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Handler Class Reference}
+\label{classopentrons__protocol__helpers_1_1ProtocolHandler}\index{opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}}
+
+
+A Class for more generic functions that apply to whole protocol.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolHandler_a29e5da68cc14e65dcc1448d8a3993526}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, protocol, robot\+\_\+instructions, robot\+\_\+handler)
+\begin{DoxyCompactList}\small\item\em Initialise timing variables used to track run duration, and initialise class members with protocol information. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolHandler_a727ed9675654149522363ab16445c3cf}{pre\+\_\+protocol}} (self)
+\begin{DoxyCompactList}\small\item\em Runs commands at the start of every single protocol in order to ensure optimal functionality. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolHandler_a58bf5e5e44232328855faa8475e9f6cc}{post\+\_\+protocol}} (self)
+\begin{DoxyCompactList}\small\item\em Commands to run at the end of every protocol. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolHandler_a45c228d2a35cdb9ff2377f4241073bcb}{check\+\_\+shaker}} (self)
+\begin{DoxyCompactList}\small\item\em Start a run at a set Temperature to check shaker is operational. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolHandler_aebdef44c6f5ea80e6d210a776878fbaf}{upload\+\_\+protocol\+\_\+run}} (self, completed=True, error\+\_\+code=None)
+\begin{DoxyCompactList}\small\item\em Build an object containing protocol metadata and run information to be pushed to an AWS cloud watch log group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_adf396e2958634c13e47b590567dcaeed}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_adf396e2958634c13e47b590567dcaeed}} 
+{\bfseries robot\+\_\+handler}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a0f365cbdd9700072ccf04164b636bb49}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a0f365cbdd9700072ccf04164b636bb49}} 
+{\bfseries protocol}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_acef8d2337fb3dfed360e2d3d0b8faeb1}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_acef8d2337fb3dfed360e2d3d0b8faeb1}} 
+{\bfseries robot\+\_\+instructions}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a3dc0140388c33febea7d09f675d6d40e}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a3dc0140388c33febea7d09f675d6d40e}} 
+{\bfseries start\+\_\+time}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_adb9543bf9acf715a6e44f4af590dbddc}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_adb9543bf9acf715a6e44f4af590dbddc}} 
+{\bfseries stop\+\_\+time}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a3c59f9562f240d9ce63c0270ebd3741b}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a3c59f9562f240d9ce63c0270ebd3741b}} 
+{\bfseries elapsed\+\_\+time}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a78809629f9e831025f0ba06955505d66}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a78809629f9e831025f0ba06955505d66}} 
+{\bfseries slack\+\_\+log\+\_\+webhook}
+\item 
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_abc277a113fb31b4d821c0b9af3159224}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_abc277a113fb31b4d821c0b9af3159224}} 
+{\bfseries cloud\+\_\+watch\+\_\+endpoint}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Class for more generic functions that apply to whole protocol. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a29e5da68cc14e65dcc1448d8a3993526}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a29e5da68cc14e65dcc1448d8a3993526}} 
+\index{opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{protocol,  }\item[{}]{robot\+\_\+instructions,  }\item[{}]{robot\+\_\+handler }\end{DoxyParamCaption})}
+
+
+
+Initialise timing variables used to track run duration, and initialise class members with protocol information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em protocol} & The instance of the protocol API context \\
+\hline
+{\em robot\+\_\+instructions} & The robot instructions extracted from the input json file \\
+\hline
+{\em robot\+\_\+handler} & The instance of the robot handler used to control the Opentrons \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a45c228d2a35cdb9ff2377f4241073bcb}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a45c228d2a35cdb9ff2377f4241073bcb}} 
+\index{opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}!check\_shaker@{check\_shaker}}
+\index{check\_shaker@{check\_shaker}!opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}}
+\doxysubsubsection{\texorpdfstring{check\_shaker()}{check\_shaker()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Handler.\+check\+\_\+shaker (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Start a run at a set Temperature to check shaker is operational. 
+
+\begin{DoxyVerb}   Sends a slack message that shaker is under testing, and runs the shaker for "shaker_test_duration" (20 seconds)
+   with a setpoint "shaker_setpoint_delta" (10oC) higher than the current. For the most part this should be enough for
+   the shaker to heat up "temp_boundary" (3oC). If this does not happen, there is something wrong with the shaker
+   and an exception will be raised.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a58bf5e5e44232328855faa8475e9f6cc}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a58bf5e5e44232328855faa8475e9f6cc}} 
+\index{opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}!post\_protocol@{post\_protocol}}
+\index{post\_protocol@{post\_protocol}!opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}}
+\doxysubsubsection{\texorpdfstring{post\_protocol()}{post\_protocol()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Handler.\+post\+\_\+protocol (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Commands to run at the end of every protocol. 
+
+
+\begin{DoxyItemize}
+\item Calculates time\+\_\+elapsed for logging purposes
+\item Homes the pipette head to ensure protocol ends gracefully
+\item Updates Slack with a notification the protocol has ended containing elapsed\+\_\+time 
+\end{DoxyItemize}\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_a727ed9675654149522363ab16445c3cf}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_a727ed9675654149522363ab16445c3cf}} 
+\index{opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}!pre\_protocol@{pre\_protocol}}
+\index{pre\_protocol@{pre\_protocol}!opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}}
+\doxysubsubsection{\texorpdfstring{pre\_protocol()}{pre\_protocol()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Handler.\+pre\+\_\+protocol (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Runs commands at the start of every single protocol in order to ensure optimal functionality. 
+
+
+\begin{DoxyItemize}
+\item Check if protocol is using shaker and check its connection
+\item If shaker is used, check that it is working as expected see \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolHandler_a45c228d2a35cdb9ff2377f4241073bcb}{check\+\_\+shaker()}}
+\item If Successful print success message to the Slack Debug Channel
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+True if passed else False 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolHandler_aebdef44c6f5ea80e6d210a776878fbaf}\label{classopentrons__protocol__helpers_1_1ProtocolHandler_aebdef44c6f5ea80e6d210a776878fbaf}} 
+\index{opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}!upload\_protocol\_run@{upload\_protocol\_run}}
+\index{upload\_protocol\_run@{upload\_protocol\_run}!opentrons\_protocol\_helpers.ProtocolHandler@{opentrons\_protocol\_helpers.ProtocolHandler}}
+\doxysubsubsection{\texorpdfstring{upload\_protocol\_run()}{upload\_protocol\_run()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Handler.\+upload\+\_\+protocol\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{completed = {\ttfamily True},  }\item[{}]{error\+\_\+code = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Build an object containing protocol metadata and run information to be pushed to an AWS cloud watch log group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em completed} & \{boolean\} Used to notify the log group if the protocol was successful or not \\
+\hline
+{\em error\+\_\+code} & \{string\} If completed flag is set to false, an error message should be provided here \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+opentrons\+\_\+protocol\+\_\+generator/transpilers/opentrons\+\_\+protocol\+\_\+helpers.\+py\end{DoxyCompactItemize}

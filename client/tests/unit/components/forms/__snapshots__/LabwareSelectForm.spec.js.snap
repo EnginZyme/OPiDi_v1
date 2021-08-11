@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMounted LabwareSelectForm renders correctly 1`] = `
+<dialog
+  header="Slot 9 Labware"
+  modal="true"
+  style="width: 500px;"
+  visible="visible"
+>
+  <accordion>
+    <accordiontab
+      header="TIP RACK"
+    >
+      <div
+        class="labware_option_list"
+      >
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Opentrons 96 Tip Rack 10 µL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Opentrons 96 Tip Rack 0.3 mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Opentrons 96 Filter Tip Rack 20 µL
+        
+        </div>
+      </div>
+    </accordiontab>
+     
+    <accordiontab
+      header="TUBE RACK"
+    >
+      <div
+        class="labware_option_list"
+      >
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test tuberack 65 mL tubes
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Test Tube Rack 5 mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Test Tube Rack 1.5mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Test Tube Rack 2mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          Test Tube Rack 50 mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test foo bar
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test bar baz
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test bar baz 2
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test bar baz 3
+        
+        </div>
+      </div>
+    </accordiontab>
+     
+    <accordiontab
+      header="WELL PLATE"
+    >
+      <div
+        class="labware_option_list"
+      >
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 96 well-plate 0.3 mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          testt 96 well-plate 0.3mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          tets 96 wellplate 0.5ml
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 96 wellplates 0.5mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          tesst 96 well-plate 2ml
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 96 well-plate 4mL
+        
+        </div>
+      </div>
+    </accordiontab>
+     
+    <accordiontab
+      header="RESERVOIR"
+    >
+      <div
+        class="labware_option_list"
+      >
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 1xslot 2mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test slot 3 mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 4xslot 5mL
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 12xslot 6mL
+        
+        </div>
+      </div>
+    </accordiontab>
+     
+    <accordiontab
+      header="SHAKER"
+    >
+      <div
+        class="labware_option_list"
+      >
+        <div
+          class="labware_option_list__button"
+        >
+          
+          2.0ml Eppendorfs on Al-rack on 3xT
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          2 Tube Rack 2 mL on 3xT
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 96 wellplate 0.3ml 3xT
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 9 wellplate 1.5mL 3xT
+        
+        </div>
+        <div
+          class="labware_option_list__button"
+        >
+          
+          test 96 wellplate 2ml 3xT
+        
+        </div>
+      </div>
+    </accordiontab>
+  </accordion>
+</dialog>
+`;
