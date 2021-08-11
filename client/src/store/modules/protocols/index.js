@@ -4,7 +4,6 @@ import locationSequence from "./locationSequence";
 import steps from "./steps";
 import types from "../../../types";
 import Axios from "axios";
-import { sendLogToLogStream } from "../../../utils";
 import { OBJECT_API_URL as API_URL } from "../../../urls";
 import { getDefaultProtocol } from "../../defaultData/protocolData";
 
@@ -275,18 +274,6 @@ export default {
         ).then((response) => {
           commit(types.CREATE_PROTOCOL, response.data);
           dispatch(types.VIEW_PROTOCOL, response.data);
-          sendLogToLogStream(
-            JSON.stringify(
-              JSON.parse(`{
-                "user": "${rootGetters.userEmail}",
-                "action": "CREATE",
-                "protocol_ID": "${response.data.id}",
-                "summary": "${rootGetters.userName} CREATED Protocol with ID: ${response.data.id}",
-                "errors": false
-              }`)
-            ),
-            rootGetters.userAuthToken
-          );
           resolve(response.data.id);
           reject(response);
         });
@@ -300,7 +287,6 @@ export default {
      */
     [types.CLONE_PROTOCOL]({ getters, rootGetters, dispatch }) {
       return new Promise((resolve, reject) => {
-        const oldProtocolId = getters.cachedProtocol.id;
         let newProtocol = JSON.parse(
           JSON.stringify(getters.cachedProtocol.protocol)
         );
@@ -326,18 +312,6 @@ export default {
         ).then((response) => {
           dispatch(types.LOAD_PROTOCOLS);
           dispatch(types.VIEW_PROTOCOL, response.data);
-          sendLogToLogStream(
-            JSON.stringify(
-              JSON.parse(`{
-                "user": "${rootGetters.userEmail}",
-                "action": "CLONE",
-                "protocol_ID": "${response.data.id}",
-                "summary": "${rootGetters.userName} CLONED Protocol with ID: ${oldProtocolId} to new ID: ${response.data.id}",
-                "errors": false
-              }`)
-            ),
-            rootGetters.userAuthToken
-          );
           resolve(response.data.id);
           reject(response);
         });
@@ -501,18 +475,6 @@ export default {
           },
         }).then((response) => {
           commit(types.DELETE_PROTOCOL, id);
-          sendLogToLogStream(
-            JSON.stringify(
-              JSON.parse(`{
-                "user": "${rootGetters.userEmail}",
-                "action": "DELETE",
-                "protocol_ID": "${id}",
-                "summary": "${rootGetters.userName} DELETE Protocol with ID: ${id}",
-                "errors": false
-              }`)
-            ),
-            rootGetters.userAuthToken
-          );
           resolve(response);
           reject(new Error(response));
         });

@@ -8,9 +8,16 @@ The LabwareService class provides methods that perform the said anemic CRUD oper
     data = LabwareService.example_method(args, kwargs)
 """
 
-from typing import List, TypedDict
+from typing import List
 from protocol_objects_api.main import db
 from protocol_objects_api.main.models.labware import Labware
+
+import sys
+
+if sys.version_info >= (3, 8):
+    from typing import TypedDict  # pylint: disable=no-name-in-module
+else:
+    from typing_extensions import TypedDict
 
 
 class LabwarePayload(TypedDict):

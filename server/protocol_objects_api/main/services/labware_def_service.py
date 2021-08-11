@@ -10,10 +10,17 @@ The LabwareDefService class provides methods that perform the said anemic CRUD o
 
 import os
 import json
-from typing import List, TypedDict
+from typing import List
 from pathlib import Path
 from protocol_objects_api.main import db
 from protocol_objects_api.main.models.labware_def import LabwareDef
+
+import sys
+
+if sys.version_info >= (3, 8):
+    from typing import TypedDict  # pylint: disable=no-name-in-module
+else:
+    from typing_extensions import TypedDict
 
 
 class LabwareDefPayload(TypedDict):

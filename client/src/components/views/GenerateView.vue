@@ -55,7 +55,6 @@
 import { mapGetters } from "vuex";
 import Axios from "axios";
 import { saveAs } from "file-saver";
-import { sendLogToLogStream } from "../../utils";
 import { GENERATOR_API_URL as API_URL } from "../../urls";
 import types from "../../types";
 
@@ -155,7 +154,6 @@ export default {
      * Generates the simulation output for the protocol in the protocol editor.
      */
     simulateProtocol() {
-      const self = this;
       this.isPreviewing = true;
       let protocol = this.cachedProtocol.protocol;
       this.$store.dispatch(types.REFRESH_USER_REGISTRATION).then(() => {
@@ -191,18 +189,6 @@ export default {
               detail: "Protocol Simulated",
               life: 1700,
             });
-            sendLogToLogStream(
-              JSON.stringify(
-                JSON.parse(`{
-                        "user": "${self.userEmail}",
-                        "action": "PREVIEW",
-                        "protocol_ID": "${self.cachedProtocol.id}",
-                        "summary": "${self.userName} PREVIEWED Protocol with ID: ${self.cachedProtocol.id} without errors",
-                        "errors": false
-                      }`)
-              ),
-              this.userAuthToken
-            );
           },
           (error) => {
             if (error.response) {
@@ -218,18 +204,6 @@ export default {
               detail: "Protocol Simulation Failed",
               life: 1700,
             });
-            sendLogToLogStream(
-              JSON.stringify(
-                JSON.parse(`{
-                      "user": "${self.userEmail}",
-                      "action": "PREVIEW",
-                      "protocol_ID": "${self.cachedProtocol.id}",
-                      "summary": "${self.userName} PREVIEWED Protocol with ID: ${self.cachedProtocol.id} with errors",
-                      "errors": true
-                    }`)
-              ),
-              this.userAuthToken
-            );
             this.isPreviewing = false;
           }
         );
@@ -248,7 +222,6 @@ export default {
         });
         return;
       }
-      const self = this;
       this.isGenerating = true;
       let protocol = this.cachedProtocol.protocol;
       this.$store.dispatch(types.REFRESH_USER_REGISTRATION).then(() => {
@@ -286,18 +259,6 @@ export default {
               detail: "Protocol Generated",
               life: 1700,
             });
-            sendLogToLogStream(
-              JSON.stringify(
-                JSON.parse(`{
-                        "user": "${self.userEmail}",
-                        "action": "GENERATE",
-                        "protocol_ID": "${self.cachedProtocol.id}",
-                        "summary": "${self.userName} GENERATED Protocol with ID: ${self.cachedProtocol.id}",
-                        "errors": false
-                      }`)
-              ),
-              this.userAuthToken
-            );
           },
           () => {
             this.$toast.add({
