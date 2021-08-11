@@ -75,7 +75,7 @@ robot_instructions = {
                 "name": "tiprack_7",
                 "labware_name": "Opentrons 96 Tip Rack 0.3 mL",
                 "labware_type": "tipRack",
-                "labware_id": "enginzyme_96_tiprack_300ul",
+                "labware_id": "96_tiprack_300ul",
                 "nickname": "",
                 "display_name": "Opentrons 96 Tip Rack 0.3 mL [7]",
                 "id": 7
@@ -84,7 +84,7 @@ robot_instructions = {
                 "name": "tiprack_8",
                 "labware_name": "Opentrons 96 Tip Rack 10 \u00b5L",
                 "labware_type": "tipRack",
-                "labware_id": "enginzyme_96_tiprack_10ul",
+                "labware_id": "96_tiprack_10ul",
                 "nickname": "",
                 "display_name": "Opentrons 96 Tip Rack 10 \u00b5L [8]",
                 "id": 8
@@ -93,7 +93,7 @@ robot_instructions = {
                 "name": "tiprack_9",
                 "labware_name": "Opentrons 96 Filter Tip Rack 20 \u00b5L",
                 "labware_type": "tipRack",
-                "labware_id": "enginzyme_96_tiprack_20ul",
+                "labware_id": "96_tiprack_20ul",
                 "nickname": "",
                 "display_name": "Opentrons 96 Filter Tip Rack 20 \u00b5L [9]",
                 "id": 9
@@ -102,7 +102,7 @@ robot_instructions = {
                 "name": "tiprack_10",
                 "labware_name": "Opentrons 96 Tip Rack 0.3 mL",
                 "labware_type": "tipRack",
-                "labware_id": "enginzyme_96_tiprack_300ul",
+                "labware_id": "96_tiprack_300ul",
                 "nickname": "",
                 "display_name": "Opentrons 96 Tip Rack 0.3 mL [10]",
                 "id": 10
@@ -111,7 +111,7 @@ robot_instructions = {
                 "name": "tiprack_11",
                 "labware_name": "Opentrons 96 Tip Rack 0.3 mL",
                 "labware_type": "tipRack",
-                "labware_id": "enginzyme_96_tiprack_300ul",
+                "labware_id": "96_tiprack_300ul",
                 "nickname": "",
                 "display_name": "Opentrons 96 Tip Rack 0.3 mL [11]",
                 "id": 11
