@@ -6,20 +6,17 @@ name = "pypi"
 [packages]
 flask-migrate = "==2.7.0"
 flask-sqlalchemy = "*"
-gunicorn = "*"
-flask-cors = "*"
 psycopg2-binary = "*"
 opentrons = "*"
-numpy = "*"
 pyserial = "*"
 requests = "*"
 pyspelling = "*"
 yapf = "*"
 Flask = "==1.1.2"
-Flask-Cors = "*"
 flask-restx = "*"
 flask-script = "*"
 flask-testing = "*"
+flask-cors = "*"
 
 [dev-packages]
 
