@@ -13,7 +13,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Create a new protocol
 
-[Image: client/public/assets/image (17).png]
+![image](client/public/assets/image(17).png)
 1. In the app homepage, click on the “Create New” button you see on the side panel to the left to show the “Create New Protocol” form.
 2. Next, fill in the name and description of the protocol to be created in the form.
 3. Finally, click on the “Create New” button in the form to create a the protocol. 
@@ -22,7 +22,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### View existing protocols
 
-[Image: client/public/assets/image (18).png]
+![image](client/public/assets/image(18).png)
 1. In the app homepage, click on the “Explore” button you see on the side panel to the left to show the “Protocols” panel.
 2. To view your protocols, click on the “My Protocols” tab by the left of the “Protocols” panel.
 3. To view protocols shared by other users, click on the “Shared Protocols” tab by the left of the “Protocols” panel.
@@ -31,7 +31,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Update a protocol’s metadata
 
-[Image: client/public/assets/image (19).png]
+![image](client/public/assets/image(19).png)
 1. In the protocol editor, click on the “Meta Data” button on the side panel to the left to show the “Protocol Meta-Data” form.
 2. You can update the “Name” and “Description” fields in the “Protocol Meta-Data” form.
 3. You can share a protocol (or not) with other users via the “Share Status” dropdown.
@@ -44,7 +44,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Setup a protocol’s robot deck
 
-[Image: client/public/assets/image (20).png][Image: client/public/assets/image (21).png]
+![image](client/public/assets/image(20).png)![image](client/public/assets/image(21).png)
 1. In the protocol editor, click on the “Deck” button on the side panel to the left to show the “Deck Setup” view.
 2. You can set the robot manufacturer via the “Device Type” dropdown (only Opentrons for now 🙂).
 3. In the “Deck Layout” subsection, you can click on slots to add, remove, or edit labware.
@@ -55,7 +55,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Manage a protocol’s location sequences
 
-[Image: client/public/assets/image (22).png]
+![image](client/public/assets/image(22).png)
 1. In the protocol editor, click on the “Sequences” button on the side panel to the left to show the “Sequences” view.
 2. To create a location sequence, you have to click on the “Add Sequence” button in the location sequences page.
 3. To edit the data of a location sequence, you have to click on it and edit the corresponding “Location Sequence” form.
@@ -66,7 +66,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Manage a protocol’s liquid classes
 
-[Image: client/public/assets/image (23).png]
+![image](client/public/assets/image(23).png)
 1. In the protocol editor, click on the “Config” button on the side panel to the left to show the “Config.” view.
 2. Next, you have to click on the “Liquid Classes” tab button on the left to view the liquid classes page.
 3. To create a liquid class, you have to click on the “Add New” button in the liquid classes page.
@@ -77,14 +77,14 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Download the current labware definition folder
 
-[Image: client/public/assets/image (24).png]
+![image](client/public/assets/image(24).png)
 1. In the protocol editor, click on the “Config” button on the side panel to the left to show the “Config.” view.
 2. Next, you have to click on the “Labwares” tab button to the left to view the labwares page.
 3. To download the current labware definition folder, you have to click on the “Get Labwares” button in this page.
 
 ### Manage a protocol’s steps
 
-[Image: client/public/assets/image (25).png]
+![image](client/public/assets/image(25).png)
 1. In the protocol editor, click on the “Steps” button on the side panel to the left to show the “Steps” view.
 2. You can create a new protocol step by clicking on the “Add Step” button.
 3. To edit the data of a protocol step, you have to click on it and edit the corresponding form to the right.
@@ -95,7 +95,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Simulate a protocol
 
-[Image: client/public/assets/image (26).png]
+![image](client/public/assets/image(26).png)
 1. In the protocol editor, click on the “Generate” button on the side panel to the left to show the “Generate” view.
 2. You can simulate the current protocol by clicking on the “Preview Steps” button.
 3. When complete, the status of the protocol simulation will be indicated via a pop-up at the top-right side of the page.
@@ -103,7 +103,7 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Generate the Opentrons robot file for a protocol
 
-[Image: client/public/assets/image (27).png]
+![image](client/public/assets/image(27).png)
 1. In the protocol editor, click on the “Generate” button on the side panel to the left to show the “Generate” view.
 2. You are required to simulate the open protocol before carrying on with the next step. Otherwise, you get an error message.
 3. You can generate and download the Opentrons robot file for the open protocol by clicking on the “Get Robot Protocol” button in the page.
@@ -111,25 +111,25 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Save changes made to a protocol
 
-[Image: client/public/assets/image (28).png]
+![image](client/public/assets/image(28).png)
 1. To save changes made to a protocol in the protocol editor, you have to click on the save button (displays the file icon) on the side panel to the left.
 2. Next, you have to confirm your action in the dialog that pops up.
 
 ### Clone a protocol
 
-[Image: client/public/assets/image (29).png]
+![image](client/public/assets/image(29).png)
 1. To delete a protocol open in the protocol editor, you have to click on the clone button (displays the copy icon) on the side panel to the left.
 2. Next, you have confirm your action in the dialog that pops up.
 
 ### Delete a protocol
 
-[Image: client/public/assets/image (30).png]
+![image](client/public/assets/image(30).png)
 1. To delete a protocol open in the protocol editor, you have to click on the delete button (displays the delete icon) on the side panel to the left.
 2. Next, you have confirm your action in the dialog that pops up.
 
 ### Export a protocol
 
-[Image: client/public/assets/image (31).png]
+![image](client/public/assets/image(31).png)
 1. In the protocol editor, click on the “Generate” button on the side panel to the left to show the “Generate” view.
 2. You can export the file for the open protocol by clicking on the “Get Protocol Design File” button in the page.
 
@@ -137,12 +137,12 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ### Load an exported protocol
 
-[Image: client/public/assets/image (32).png]
+![image](client/public/assets/image(32).png)
 1. In the app homepage, you are able to click on the “Import” button on the side panel to the left to import a previously exported protocol.
 
 ### Sign out of the app
 
-[Image: client/public/assets/image (33).png]
+![image](client/public/assets/image(33).png)
 1. On the left side panel, where you have your Google account avatar displayed, you can click on that avatar to view the sign-out form.
 2. To sign-out, you have to click on the “Sign Out” button in this form.
 
