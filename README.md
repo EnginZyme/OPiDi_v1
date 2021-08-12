@@ -45,10 +45,10 @@ $ docker-compose build
 Run a Docker container from the built image
 
 ```
-$ docker compose run -d --name opidi-app -p 80:8765 -p 5000:5000 web
+$ docker compose run -d --name opidi-app -p 8007:8765 -p 5000:5000 web
 ```
 
-Next, you can access the web application via this URL: http://localhost
+Next, you can access the web application via this URL: http://localhost:8007
 
 Also, you can access interactive Swagger docs for the API at http://localhost:5000/api/1/objects and http://localhost:5000/api/1/generator
 
@@ -62,14 +62,14 @@ However, you are able to use a local or remote Postgres database in the producti
 * Then run the following commands to migrate the Postgres database.
 
 ```
-$ docker compose run -d --name opidi-app -p 80:8765 web pipenv run python manage.py db migrate
-$ docker compose run -d --name opidi-app -p 80:8765 web pipenv run python manage.py db upgrade
+$ docker compose run -d --name opidi-app -p 8007:8765 web pipenv run python manage.py db migrate
+$ docker compose run -d --name opidi-app -p 8007:8765 web pipenv run python manage.py db upgrade
 ```
 
 ### To Enable Google Authentication
 Follow [this guide](https://developers.google.com/identity/sign-in/web/sign-in) to obtain your Client ID for Google federated authentication.
 
-Next, add `http://localhost` to the allowed Javascript origins and redirect uris lists in the Google API console.
+Next, add `http://localhost:8007` to the allowed Javascript origins and redirect uris lists in the Google API console.
 
 Further, add the following to the head of the `client/public/index.html` file:
 ```
