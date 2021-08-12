@@ -430,7 +430,7 @@ export default {
      */
     [types.SAVE_PROTOCOL_CACHE]({ commit, state, rootState, rootGetters, dispatch }) {
       return new Promise((resolve, reject) => {
-        Axios.put(
+        Axios.patch(
           `${API_URL}/protocol/${state.cache.id}`,
           {
             id: state.cache.id,
