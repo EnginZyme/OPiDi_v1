@@ -58,12 +58,12 @@ def run(protocol: protocol_api.ProtocolContext):
                 protocol.comment(
                     f'ERROR: {exc_type} @ {exc_traceback.tb_lineno} - Step: {step["name"]}\n'
                 )
-                ProtocolUtils.SLACK_MESSAGE_WEBHOOK(traceback.format_exc())
+                ProtocolUtils.send_log_message(traceback.format_exc())
 
         protocol_handler.post_protocol()
         protocol_handler.upload_protocol_run()
 
     else:
-        ProtocolUtils.SLACK_MESSAGE_WEBHOOK("INFO: Protocol has Failed!")
+        ProtocolUtils.send_log_message("INFO: Protocol has Failed!")
         protocol_handler.upload_protocol_run(False,
                                              "Protocol Failed to run Pre Step")
