@@ -19,7 +19,7 @@ Further, the user can save changes made to a protocol, clone that protocol, or d
 
 ![opd_architecture.png](client/public/assets/opd_architecture.png)
 
-The web app depends on the [protocol generator api](server/protocol_objects_api) for persistence and CRUD operations on created protocols and protocol dependencies such as labware, and pipette data. The protocol objects API sits a-top a protocol objects DB (provisioned as an AWS RDS instance).
+The web app depends on the [protocol objects api](server/protocol_objects_api) for persistence and CRUD operations on created protocols and protocol dependencies such as labware, and pipette data. The protocol objects API sits a-top a protocol objects DB (provisioned as an AWS RDS instance).
 The web app also depends on the [protocol generator api](server/protocol_generator_api) to either simulate protocol specifications sent from the web app, or to generate the Opentrons robot specific equivalent of the protocol.
 
 ## Getting Started
@@ -39,7 +39,7 @@ $ cd opidi
 Build a Docker image for the project (this step requires you to have Docker setup on your device)
 
 ```
-$ docker-compose build 
+$ docker compose up
 ```
 
 Run a Docker container from the built image

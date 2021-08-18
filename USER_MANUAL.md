@@ -4,11 +4,6 @@ You can create, view, and edit Opentrons protocols with this app.
 
 ## Step 1: Open the Opentrons Protocol Designer App
 
-1. On your computer, open the EnginZyme [automation portal](http://lab.enginzyme.com/).
-2. Find the Protocol Designer app.
-3. Click the “Open” button.
-4. Sign in with your EnginZyme Google account.
-
 ## Step 2: Get Started
 
 ### Create a new protocol
