@@ -7,8 +7,6 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "deploy": "aws --profile protocol-designer-spa --region eu-north-1 s3 sync ./dist s3://protocol-designer-spa-test --delete",
-    "deploy-prod": "aws --profile protocol-designer-spa --region eu-north-1 s3 sync ./dist s3://protocol-designer-spa --delete",
     "docs:build-markdown": "vue-docgen -c docgen.config.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"

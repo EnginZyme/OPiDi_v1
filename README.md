@@ -6,6 +6,8 @@ A "No code" multiuser protocol designer server to program the OT2's liquid handl
 
 Quick link to [Protocol Generator Docs](https://enginzyme-public.gitlab.io/opidi)
 
+![protocol_app_demo.png.png](client/public/assets/protocol_app_demo.png)
+
 ## Overview
 
 Opentrons OT2 robots are inexpensive and versatile liquid handling robots developed and sold by Opentrons Labworks Inc. The robots source code is open and available in the [opentrons repository](https://github.com/Opentrons/opentrons).  The robots motion and liquid handling commands are sent directly from the robot's Raspberry Pi via python scripts.
