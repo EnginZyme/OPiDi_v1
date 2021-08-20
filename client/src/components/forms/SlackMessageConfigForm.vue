@@ -13,16 +13,16 @@
             v-model="slackMessageStepName"
           />
         </div>
-        <div>
-          <p class="step_config_form__body__content__label--medium">Channel</p>
-          <Dropdown
-            :options="slackWebhooks"
-            optionLabel="channel"
-            placeholder="Select option"
-            class="step_config_form__body__content__dropdown"
-            v-model="slackMessageChannel"
-          />
-        </div>
+<!--        <div>-->
+<!--          <p class="step_config_form__body__content__label&#45;&#45;medium">Channel</p>-->
+<!--          <Dropdown-->
+<!--            :options="slackWebhooks"-->
+<!--            optionLabel="channel"-->
+<!--            placeholder="Select option"-->
+<!--            class="step_config_form__body__content__dropdown"-->
+<!--            v-model="slackMessageChannel"-->
+<!--          />-->
+<!--        </div>-->
         <div>
           <p class="step_config_form__body__content__label--medium">Message</p>
           <InputText

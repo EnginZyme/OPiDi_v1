@@ -11,7 +11,7 @@
         alt="EnginZyme Logo"
         src="../../assets/logo_light.svg"
       />
-      <span class="app-banner__app-name">Protocol Designer</span>
+      <span class="app-banner__app-name">OPiDi</span>
       <span class="app-banner__app-version">{{ version }}</span>
     </div>
   </div>
