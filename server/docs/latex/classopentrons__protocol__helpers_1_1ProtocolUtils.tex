@@ -1,51 +1,56 @@
 \hypertarget{classopentrons__protocol__helpers_1_1ProtocolUtils}{}\doxysection{opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Utils Class Reference}
 \label{classopentrons__protocol__helpers_1_1ProtocolUtils}\index{opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}}
-
-
-Static library of useful functions for the protocol.  
-
-
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolUtils_a3b57a93017740bae64b33dfefcbf2ded}{send\+\_\+slack\+\_\+message}} (message, webhook)
-\begin{DoxyCompactList}\small\item\em Send a message to the specified slack channel. \end{DoxyCompactList}\item 
+\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolUtils_a519fe2cbe69508a021dd0b918a7ce02a}{send\+\_\+log\+\_\+message}} (message)
+\item 
 def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolUtils_a81aa4779c8d0cbcd1bcce084446a9c9b}{post\+\_\+cloud\+\_\+watch}} (log\+\_\+stream, payload, endpoint)
-\begin{DoxyCompactList}\small\item\em Post to the opentrons-\/robot-\/logs log group on the Cloud Watch service. \end{DoxyCompactList}\item 
-def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolUtils_a49f4a848a607805923005dddc240db1b}{get\+\_\+\+OT\+\_\+name}} ()
-\begin{DoxyCompactList}\small\item\em Get the name of the current Opentrons. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classopentrons__protocol__helpers_1_1ProtocolUtils_a49f4a848a607805923005dddc240db1b}{get\+\_\+\+O\+T\+\_\+name}} ()
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Static library of useful functions for the protocol. 
+\begin{DoxyVerb}Static library of useful functions for the protocol\end{DoxyVerb}
+ 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolUtils_a49f4a848a607805923005dddc240db1b}\label{classopentrons__protocol__helpers_1_1ProtocolUtils_a49f4a848a607805923005dddc240db1b}} 
 \index{opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}!get\_OT\_name@{get\_OT\_name}}
 \index{get\_OT\_name@{get\_OT\_name}!opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}}
 \doxysubsubsection{\texorpdfstring{get\_OT\_name()}{get\_OT\_name()}}
-{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Utils.\+get\+\_\+\+OT\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Utils.\+get\+\_\+\+O\+T\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}    Get the name of the current Opentrons
 
-
-Get the name of the current Opentrons. 
-
-\begin{DoxyReturn}{Returns}
-\{string\} The name of the Opentrons 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolUtils_a81aa4779c8d0cbcd1bcce084446a9c9b}\label{classopentrons__protocol__helpers_1_1ProtocolUtils_a81aa4779c8d0cbcd1bcce084446a9c9b}} 
+    @return {string} The name of the Opentrons
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolUtils_a81aa4779c8d0cbcd1bcce084446a9c9b}\label{classopentrons__protocol__helpers_1_1ProtocolUtils_a81aa4779c8d0cbcd1bcce084446a9c9b}} 
 \index{opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}!post\_cloud\_watch@{post\_cloud\_watch}}
 \index{post\_cloud\_watch@{post\_cloud\_watch}!opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}}
 \doxysubsubsection{\texorpdfstring{post\_cloud\_watch()}{post\_cloud\_watch()}}
 {\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Utils.\+post\+\_\+cloud\+\_\+watch (\begin{DoxyParamCaption}\item[{}]{log\+\_\+stream,  }\item[{}]{payload,  }\item[{}]{endpoint }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Post to the opentrons-robot-logs log group on the Cloud Watch service
 
+    @param log_stream {string} The name of the cloud watch log stream to post to.
+    @param payload {dictionary} The payload structure is defined in Quip and built in upload_protocol_run()
+    @param endpoint {string} The endpoint for the AWS cloud watch service used.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolUtils_a519fe2cbe69508a021dd0b918a7ce02a}\label{classopentrons__protocol__helpers_1_1ProtocolUtils_a519fe2cbe69508a021dd0b918a7ce02a}} 
+\index{opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}!send\_log\_message@{send\_log\_message}}
+\index{send\_log\_message@{send\_log\_message}!opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}}
+\doxysubsubsection{\texorpdfstring{send\_log\_message()}{send\_log\_message()}}
+{\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Utils.\+send\+\_\+log\+\_\+message (\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})}
 
-Post to the opentrons-\/robot-\/logs log group on the Cloud Watch service. 
+\begin{DoxyVerb}Function containing code to handle specifically log messages. Currently just calls
+the send_slack_message() function with the SLACK_LOG_WEBHOOK. However future plans to
+integrate differing logging methods into this function.
 
-\begin{DoxyVerb}       @param log_stream {string} The name of the cloud watch log stream to post to.
-       @param payload {dictionary} The payload structure is defined in Quip and built in upload_protocol_run()
-       @param endpoint {string} The endpoint for the AWS cloud watch service used.
+@param message The log message to send.
 \end{DoxyVerb}
  \mbox{\Hypertarget{classopentrons__protocol__helpers_1_1ProtocolUtils_a3b57a93017740bae64b33dfefcbf2ded}\label{classopentrons__protocol__helpers_1_1ProtocolUtils_a3b57a93017740bae64b33dfefcbf2ded}} 
 \index{opentrons\_protocol\_helpers.ProtocolUtils@{opentrons\_protocol\_helpers.ProtocolUtils}!send\_slack\_message@{send\_slack\_message}}
@@ -53,22 +58,15 @@ Post to the opentrons-\/robot-\/logs log group on the Cloud Watch service.
 \doxysubsubsection{\texorpdfstring{send\_slack\_message()}{send\_slack\_message()}}
 {\footnotesize\ttfamily def opentrons\+\_\+protocol\+\_\+helpers.\+Protocol\+Utils.\+send\+\_\+slack\+\_\+message (\begin{DoxyParamCaption}\item[{}]{message,  }\item[{}]{webhook }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}    Send a message to the specified slack channel
 
+    @param message {string} The message to send
+    @param webhook {string} The Slack webhook for the slack channel where the message should be sent
 
-Send a message to the specified slack channel. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em message} & \{string\} The message to send \\
-\hline
-{\em webhook} & \{string\} The Slack webhook for the slack channel where the message should be sent\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The request response if needed. 
-\end{DoxyReturn}
-
+    @return The request response if needed.
+\end{DoxyVerb}
+ 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-opentrons\+\_\+protocol\+\_\+generator/transpilers/opentrons\+\_\+protocol\+\_\+helpers.\+py\end{DoxyCompactItemize}
+protocol\+\_\+generator/transpilers/opentrons\+\_\+protocol\+\_\+helpers.\+py\end{DoxyCompactItemize}

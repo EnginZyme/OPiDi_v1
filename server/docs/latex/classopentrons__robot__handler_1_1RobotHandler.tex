@@ -1,62 +1,56 @@
 \hypertarget{classopentrons__robot__handler_1_1RobotHandler}{}\doxysection{opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler Class Reference}
 \label{classopentrons__robot__handler_1_1RobotHandler}\index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
-
-
-Class used for basic opentrons commands.  
-
-
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a43d9effe4f0c5655e6afc31539d22391}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_ade06e0dccaf437209774a66ef6de3bc2}{protocol}}, robot\+\_\+instructions)
-\begin{DoxyCompactList}\small\item\em Initialise the class members, extract the slack log webhook, and assign the labware, trash bin, and pipettes to their relative positions. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a8035a783e47134d4a84d8bb3a70a2c41}\label{classopentrons__robot__handler_1_1RobotHandler_a8035a783e47134d4a84d8bb3a70a2c41}} 
-def {\bfseries assign\+\_\+slots} (self)
-\begin{DoxyCompactList}\small\item\em Iterate over all deck slots in the instructions file and load them into the protocol context. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_aa1bb2e59e4a6ec66c6daf0e4f04f748e}\label{classopentrons__robot__handler_1_1RobotHandler_aa1bb2e59e4a6ec66c6daf0e4f04f748e}} 
-def {\bfseries assign\+\_\+trash} (self)
-\begin{DoxyCompactList}\small\item\em Assign the trash in the protocol. \end{DoxyCompactList}\item 
+\item 
+def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a8035a783e47134d4a84d8bb3a70a2c41}{assign\+\_\+slots}} (self)
+\item 
+def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_aa1bb2e59e4a6ec66c6daf0e4f04f748e}{assign\+\_\+trash}} (self)
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_ad957ced3c6c6f5770ee7fbaf36f78135}{assign\+\_\+pipettes}} (self)
-\begin{DoxyCompactList}\small\item\em Iterate over the pipettes in the instructions file and load them as instruments into the protocol context. \end{DoxyCompactList}\item 
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_aeeeb10e74ef36faffa19d2c47ecfa048}{get\+\_\+wells}} (self, sources)
-\begin{DoxyCompactList}\small\item\em Get the Well locations for each source labware. \end{DoxyCompactList}\item 
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a4ee29cadf6d9a9c69807fe825536f6df}{apply\+\_\+offsets}} (self, wells, offset\+\_\+type, offset\+\_\+value)
-\begin{DoxyCompactList}\small\item\em Allows for the option to specify an offset for the aspirate/dispense function. \end{DoxyCompactList}\item 
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a6b4f88430f80b5a5326943cc4c0e71ef}{update\+\_\+flow\+\_\+rate}} (self, pipette, liquid\+\_\+class)
-\begin{DoxyCompactList}\small\item\em Used to first calculate the flow rate based on the ratio provided in the instructions file for aspirate, dispense, and blow\+\_\+out. \end{DoxyCompactList}\item 
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_ad18f98c14c32427db03c33adf10c8604}{simple\+\_\+pipetting}} (self, parameters)
-\begin{DoxyCompactList}\small\item\em Stores the logic for a simple pipette step. \end{DoxyCompactList}\item 
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_aaa45124a4967e34bb65a1591c2ece3c7}{array\+\_\+pipetting}} (self, parameters)
-\begin{DoxyCompactList}\small\item\em Stores the logic for an array pipette step. \end{DoxyCompactList}\item 
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a8d044c6f3a1f27eb541210b68e5e947a}{shake}} (self, parameters)
-\begin{DoxyCompactList}\small\item\em Stores the logic for a simple shaker step utilising the Bio\+Shake 3000t. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a74a20194ad85146433bb02fa3223a0ae}\label{classopentrons__robot__handler_1_1RobotHandler_a74a20194ad85146433bb02fa3223a0ae}} 
-def {\bfseries custom\+\_\+home} (self)
-\begin{DoxyCompactList}\small\item\em Custom code for homing the gantry to ensure that the pipette tips are raised and will not hit any custom labware. \end{DoxyCompactList}\item 
+\item 
+def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a74a20194ad85146433bb02fa3223a0ae}{custom\+\_\+home}} (self)
+\item 
 def \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a655ac1076263e0d4797c0dffc6a0883c}{execute\+\_\+step}} (self, step)
-\begin{DoxyCompactList}\small\item\em Takes the input step and processes it by calling the respective function based on step type and parameters present. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_ade06e0dccaf437209774a66ef6de3bc2}\label{classopentrons__robot__handler_1_1RobotHandler_ade06e0dccaf437209774a66ef6de3bc2}} 
-{\bfseries protocol}
+\mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_ade06e0dccaf437209774a66ef6de3bc2}{protocol}}
 \begin{DoxyCompactList}\small\item\em The active protocol context. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_af445e9b2dff873bfd3d6023842cabd42}\label{classopentrons__robot__handler_1_1RobotHandler_af445e9b2dff873bfd3d6023842cabd42}} 
-{\bfseries instructions}
-\begin{DoxyCompactList}\small\item\em Robot instructions from JSON. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_af445e9b2dff873bfd3d6023842cabd42}{instructions}}
+\begin{DoxyCompactList}\small\item\em Robot instructions from J\+S\+ON. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_acbca19ae3431a2ee03a6b6766e30f54a}\label{classopentrons__robot__handler_1_1RobotHandler_acbca19ae3431a2ee03a6b6766e30f54a}} 
 {\bfseries slack\+\_\+log\+\_\+webhook}
 \item 
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_ab3531e8e379cf531d29c8d8e16ee5202}\label{classopentrons__robot__handler_1_1RobotHandler_ab3531e8e379cf531d29c8d8e16ee5202}} 
-{\bfseries left\+\_\+pipette}
+\mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_ab3531e8e379cf531d29c8d8e16ee5202}{left\+\_\+pipette}}
 \begin{DoxyCompactList}\small\item\em The left pipette of the Opentrons. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a1d0de3ff2e2bf675fd888790f1c15fad}\label{classopentrons__robot__handler_1_1RobotHandler_a1d0de3ff2e2bf675fd888790f1c15fad}} 
-{\bfseries right\+\_\+pipette}
+\mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_a1d0de3ff2e2bf675fd888790f1c15fad}{right\+\_\+pipette}}
 \begin{DoxyCompactList}\small\item\em The right pipette of the Opentrons. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Class used for basic opentrons commands. 
+\begin{DoxyVerb}Class used for basic opentrons commands.
+\end{DoxyVerb}
+ 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a43d9effe4f0c5655e6afc31539d22391}\label{classopentrons__robot__handler_1_1RobotHandler_a43d9effe4f0c5655e6afc31539d22391}} 
@@ -65,18 +59,13 @@ Class used for basic opentrons commands.
 \doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{protocol,  }\item[{}]{robot\+\_\+instructions }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Initialise the class members, extract the slack log webhook, and assign the labware,
+trash bin, and pipettes to their relative positions
 
-
-Initialise the class members, extract the slack log webhook, and assign the labware, trash bin, and pipettes to their relative positions. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em protocol} & The instance of the protocol API context \\
-\hline
-{\em robot\+\_\+instructions} & The robot instructions extracted from the input json file \\
-\hline
-\end{DoxyParams}
-
+@param protocol The instance of the protocol API context
+@param robot_instructions The robot instructions extracted from the input json file
+\end{DoxyVerb}
+ 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a4ee29cadf6d9a9c69807fe825536f6df}\label{classopentrons__robot__handler_1_1RobotHandler_a4ee29cadf6d9a9c69807fe825536f6df}} 
@@ -85,137 +74,122 @@ Initialise the class members, extract the slack log webhook, and assign the labw
 \doxysubsubsection{\texorpdfstring{apply\_offsets()}{apply\_offsets()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+apply\+\_\+offsets (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{wells,  }\item[{}]{offset\+\_\+type,  }\item[{}]{offset\+\_\+value }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Allows for the option to specify an offset for the aspirate/dispense function.
 
+The offset type specifies where on the well the offset should start from.
+Offset types are currently Bottom and Top.
 
-Allows for the option to specify an offset for the aspirate/dispense function. 
+@param wells {list} A list of well locations for the given labware sources for which to apply the offset
+@param offset_type {string} The location on the well were the offset should originate from
+@param offset_value {float} The offset value to apply to the wells
 
-The offset type specifies where on the well the offset should start from. Offset types are currently Bottom and Top.
-
-
-\begin{DoxyParams}{Parameters}
-{\em wells} & \{list\} A list of well locations for the given labware sources for which to apply the offset \\
-\hline
-{\em offset\+\_\+type} & \{string\} The location on the well were the offset should originate from \\
-\hline
-{\em offset\+\_\+value} & \{float\} The offset value to apply to the wells\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The list of wells updated with offsets 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_aaa45124a4967e34bb65a1591c2ece3c7}\label{classopentrons__robot__handler_1_1RobotHandler_aaa45124a4967e34bb65a1591c2ece3c7}} 
+@return The list of wells updated with offsets
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_aaa45124a4967e34bb65a1591c2ece3c7}\label{classopentrons__robot__handler_1_1RobotHandler_aaa45124a4967e34bb65a1591c2ece3c7}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!array\_pipetting@{array\_pipetting}}
 \index{array\_pipetting@{array\_pipetting}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{array\_pipetting()}{array\_pipetting()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+array\+\_\+pipetting (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parameters }\end{DoxyParamCaption})}
 
-
-
-Stores the logic for an array pipette step. 
-
-Similar to \mbox{\hyperlink{classopentrons__robot__handler_1_1RobotHandler_ad18f98c14c32427db03c33adf10c8604}{simple\+\_\+pipetting()}} except using an array map as input. 
-\begin{DoxyParams}{Parameters}
-{\em parameters} & \{dictionary\} The parameters for the step \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_ad957ced3c6c6f5770ee7fbaf36f78135}\label{classopentrons__robot__handler_1_1RobotHandler_ad957ced3c6c6f5770ee7fbaf36f78135}} 
+\begin{DoxyVerb}Stores the logic for an array pipette step. Similar to simple_pipetting() except using an array map as input.
+@param parameters {dictionary} The parameters for the step
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_ad957ced3c6c6f5770ee7fbaf36f78135}\label{classopentrons__robot__handler_1_1RobotHandler_ad957ced3c6c6f5770ee7fbaf36f78135}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!assign\_pipettes@{assign\_pipettes}}
 \index{assign\_pipettes@{assign\_pipettes}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{assign\_pipettes()}{assign\_pipettes()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+assign\+\_\+pipettes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Iterate over the pipettes in the instructions file and load them
+as instruments into the protocol context. Also load their respective tip racks
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a8035a783e47134d4a84d8bb3a70a2c41}\label{classopentrons__robot__handler_1_1RobotHandler_a8035a783e47134d4a84d8bb3a70a2c41}} 
+\index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!assign\_slots@{assign\_slots}}
+\index{assign\_slots@{assign\_slots}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
+\doxysubsubsection{\texorpdfstring{assign\_slots()}{assign\_slots()}}
+{\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+assign\+\_\+slots (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Iterate over all deck slots in the instructions file and load them into the protocol context
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_aa1bb2e59e4a6ec66c6daf0e4f04f748e}\label{classopentrons__robot__handler_1_1RobotHandler_aa1bb2e59e4a6ec66c6daf0e4f04f748e}} 
+\index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!assign\_trash@{assign\_trash}}
+\index{assign\_trash@{assign\_trash}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
+\doxysubsubsection{\texorpdfstring{assign\_trash()}{assign\_trash()}}
+{\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+assign\+\_\+trash (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-Iterate over the pipettes in the instructions file and load them as instruments into the protocol context. 
+\begin{DoxyVerb}Assign the trash in the protocol
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a74a20194ad85146433bb02fa3223a0ae}\label{classopentrons__robot__handler_1_1RobotHandler_a74a20194ad85146433bb02fa3223a0ae}} 
+\index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!custom\_home@{custom\_home}}
+\index{custom\_home@{custom\_home}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
+\doxysubsubsection{\texorpdfstring{custom\_home()}{custom\_home()}}
+{\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+custom\+\_\+home (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-Also load their respective tip racks \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a655ac1076263e0d4797c0dffc6a0883c}\label{classopentrons__robot__handler_1_1RobotHandler_a655ac1076263e0d4797c0dffc6a0883c}} 
+\begin{DoxyVerb}Custom code for homing the gantry to ensure that the pipette tips are raised
+and will not hit any custom labware.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a655ac1076263e0d4797c0dffc6a0883c}\label{classopentrons__robot__handler_1_1RobotHandler_a655ac1076263e0d4797c0dffc6a0883c}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!execute\_step@{execute\_step}}
 \index{execute\_step@{execute\_step}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{execute\_step()}{execute\_step()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+execute\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{step }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Takes the input step and processes it by calling the respective function based on step type and parameters present
 
-
-Takes the input step and processes it by calling the respective function based on step type and parameters present. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em step} & \{dictionary\} The step to be processed \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_aeeeb10e74ef36faffa19d2c47ecfa048}\label{classopentrons__robot__handler_1_1RobotHandler_aeeeb10e74ef36faffa19d2c47ecfa048}} 
+@param step {dictionary} The step to be processed
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_aeeeb10e74ef36faffa19d2c47ecfa048}\label{classopentrons__robot__handler_1_1RobotHandler_aeeeb10e74ef36faffa19d2c47ecfa048}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!get\_wells@{get\_wells}}
 \index{get\_wells@{get\_wells}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{get\_wells()}{get\_wells()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+get\+\_\+wells (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sources }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Get the Well locations for each source labware.
 
-
-Get the Well locations for each source labware. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em sources} & \{list\} A list of the labware used as sources for the current step \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-locations \{list\} A list of well locations for the given labware sources 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a8d044c6f3a1f27eb541210b68e5e947a}\label{classopentrons__robot__handler_1_1RobotHandler_a8d044c6f3a1f27eb541210b68e5e947a}} 
+@param sources {list} A list of the labware used as sources for the current step
+@return locations {list} A list of well locations for the given labware sources
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a8d044c6f3a1f27eb541210b68e5e947a}\label{classopentrons__robot__handler_1_1RobotHandler_a8d044c6f3a1f27eb541210b68e5e947a}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!shake@{shake}}
 \index{shake@{shake}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{shake()}{shake()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+shake (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parameters }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Stores the logic for a simple shaker step utilising the BioShake 3000t.
+Only runs during the actual protocol since a simulation would not have access to the serial ports.
+Sets the temperature and RPM setpoint and starts the system. If users set "wait_for_stop" as an
+option, the code will block until the shaker step has completed (indicated by the shaker "homing").
+Either way will stop and cool-down the shaker post completion.
 
-
-Stores the logic for a simple shaker step utilising the Bio\+Shake 3000t. 
-
-Only runs during the actual protocol since a simulation would not have access to the serial ports. Sets the temperature and RPM setpoint and starts the system. If users set \char`\"{}wait\+\_\+for\+\_\+stop\char`\"{} as an option, the code will block until the shaker step has completed (indicated by the shaker \char`\"{}homing\char`\"{}). Either way will stop and cool-\/down the shaker post completion.
-
-
-\begin{DoxyParams}{Parameters}
-{\em parameters} & The parameters for the step \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_ad18f98c14c32427db03c33adf10c8604}\label{classopentrons__robot__handler_1_1RobotHandler_ad18f98c14c32427db03c33adf10c8604}} 
+@param parameters The parameters for the step\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_ad18f98c14c32427db03c33adf10c8604}\label{classopentrons__robot__handler_1_1RobotHandler_ad18f98c14c32427db03c33adf10c8604}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!simple\_pipetting@{simple\_pipetting}}
 \index{simple\_pipetting@{simple\_pipetting}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{simple\_pipetting()}{simple\_pipetting()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+simple\+\_\+pipetting (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{parameters }\end{DoxyParamCaption})}
 
-
-
-Stores the logic for a simple pipette step. 
-
-Will prepare the step based on sources, offsets, destinations etc... Then run through each action transferring liquid. 
-\begin{DoxyParams}{Parameters}
-{\em parameters} & \{dictionary\} The parameters for the step \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a6b4f88430f80b5a5326943cc4c0e71ef}\label{classopentrons__robot__handler_1_1RobotHandler_a6b4f88430f80b5a5326943cc4c0e71ef}} 
+\begin{DoxyVerb}Stores the logic for a simple pipette step. Will prepare the step based on sources,
+offsets, destinations etc... Then run through each action transferring liquid.
+@param parameters {dictionary} The parameters for the step
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classopentrons__robot__handler_1_1RobotHandler_a6b4f88430f80b5a5326943cc4c0e71ef}\label{classopentrons__robot__handler_1_1RobotHandler_a6b4f88430f80b5a5326943cc4c0e71ef}} 
 \index{opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}!update\_flow\_rate@{update\_flow\_rate}}
 \index{update\_flow\_rate@{update\_flow\_rate}!opentrons\_robot\_handler.RobotHandler@{opentrons\_robot\_handler.RobotHandler}}
 \doxysubsubsection{\texorpdfstring{update\_flow\_rate()}{update\_flow\_rate()}}
 {\footnotesize\ttfamily def opentrons\+\_\+robot\+\_\+handler.\+Robot\+Handler.\+update\+\_\+flow\+\_\+rate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{pipette,  }\item[{}]{liquid\+\_\+class }\end{DoxyParamCaption})}
 
+\begin{DoxyVerb}Used to first calculate the flow rate based on the ratio provided in the instructions file for aspirate, dispense,
+and blow_out. The absolute values of max, min, and default rate differ depending on the type of pipette used.
+Resource https://github.com/Opentrons/opentrons/blob/edge/shared-data/pipette/definitions/pipetteNameSpecs.json
 
+Once the absolute rate has been calculated, it is set in the pipette object ready for the transfer step.
+Note that the rates are stored/defined in the liquid class associated with the step.
 
-Used to first calculate the flow rate based on the ratio provided in the instructions file for aspirate, dispense, and blow\+\_\+out. 
-
-The absolute values of max, min, and default rate differ depending on the type of pipette used. Resource \href{https://github.com/Opentrons/opentrons/blob/edge/shared-data/pipette/definitions/pipetteNameSpecs.json}{\texttt{ https\+://github.\+com/\+Opentrons/opentrons/blob/edge/shared-\/data/pipette/definitions/pipette\+Name\+Specs.\+json}}
-
-Once the absolute rate has been calculated, it is set in the pipette object ready for the transfer step. Note that the rates are stored/defined in the liquid class associated with the step.
-
-
-\begin{DoxyParams}{Parameters}
-{\em pipette} & The pipette for which to update the flow rate \\
-\hline
-{\em liquid\+\_\+class} & Contains information on the different ratios for aspirate, dispense, blow\+\_\+out rates. \\
-\hline
-\end{DoxyParams}
-
+@param pipette The pipette for which to update the flow rate
+@param liquid_class Contains information on the different ratios for aspirate, dispense, blow_out rates.
+\end{DoxyVerb}
+ 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-opentrons\+\_\+protocol\+\_\+generator/transpilers/opentrons\+\_\+robot\+\_\+handler.\+py\end{DoxyCompactItemize}
+protocol\+\_\+generator/transpilers/opentrons\+\_\+robot\+\_\+handler.\+py\end{DoxyCompactItemize}

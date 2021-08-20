@@ -1,28 +1,52 @@
 # OPiDi
 
+A "No code" multiuser protocol designer server to program the OT2's liquid handling robots
+
+----
+
+Quick link to the [Protocol Generator Docs](https://enginzyme-public.gitlab.io/opidi)
+
+![protocol_app_demo.png.png](client/public/assets/protocol_app_demo.png)
+
 ## Overview
-This project is about a web app that can be used to easily create, use, and share unambiguously specified laboratory protocols which are reproducible, flexible, configurable, and consistent.
-These protocols are currently used to specify robot operations on the Opentrons platform. In the future, it can also be used for specifying robot operations on other manufacturers' platform (eg. Flowbot, Hamilton).
-Google is used as the identity provider for the authentication layer of this web app. As a result users will first have to sign in via their email addresses before they gain access to it.
-The workflow in the app consists of creating, importing, or viewing an existing protocol. Either of these actions require that you follow up with the following steps:
 
-* Setup the robot deck with labware, pipette, and tip rack choices.
-* Optionally create location sequences to be used in sequence transfer steps.
-* Specify the desired robot operations in steps.
-* Export the underlying protocol object.
-* Simulate the protocol to generate text output with which you may verify that the protocol will run correctly on the robot.
-* Generate the corresponding robot specific protocol file (a Python file in the case of the Opentrons bot) to be run on the hardware.
+Opentrons OT2 robots are inexpensive and versatile liquid handling robots developed and sold by Opentrons Labworks Inc. The robots source code is open and available in the [opentrons repository](https://github.com/Opentrons/opentrons).  The robots motion and liquid handling commands are sent directly from the robot's Raspberry Pi via python scripts.
 
-The user is enabled to mark a protocol as being “verified” upon actual verification via a test-run. The user is also enabled to share their protocol within a shared space provided by the web app.
-Further, the user can save changes made to a protocol, clone that protocol, or delete it entirely.
-## Architectural Overview
+The opentrons python library allows anyone with coding skills to program the robot protocols and add any custom hardware or software integrations. (It's a computer running python scripts after all!).  But for those with limited coding skills building and sharing protocols can be cumbersome. This is where OPiDi takes relevance:  a webapp to graphically generate robot protocols with no code.  
+
+OPiDi can be used to easily create, use, and share unambiguously specified laboratory protocols which are reproducible, flexible, configurable, and consistent.
+
+An instructions json file contains the protocol structure divided in two main sections: **Deck** and **Steps**
+
+* Deck refers to the robot's deck setup:  labware location and the chosen pipettes.
+
+* Steps is a list of standardized actions that will be executed sequentially. Such as
+  * Simple Dispense
+  * Sequence Dispense
+  * Array Dispense
+  * Loop
+  * Shake 
+  * Send Notification
+
+## App architecture
+
+![opg_high_level_architecture.png](server/docs/files/OPG_High_Level_Architecture.jpg)
+
+The webapp **client** facilitates the creation of the instructions file and transpiles it into a downloadable python script. 
+
+The **opentrons_protocol_generator** transpiler was primarily built to be extensible. Developer can include more step schemas to the instructions file and define the step actions within the transpiler templates.
+
 
 ![opd_architecture.png](client/public/assets/opd_architecture.png)
+
 
 The web app depends on the [protocol objects api](server/protocol_objects_api) for persistence and CRUD operations on created protocols and protocol dependencies such as labware, and pipette data. The protocol objects API sits a-top a protocol objects DB (provisioned as an AWS RDS instance).
 The web app also depends on the [protocol generator api](server/protocol_generator_api) to either simulate protocol specifications sent from the web app, or to generate the Opentrons robot specific equivalent of the protocol.
 
 ## Getting Started
+
+You can get started by running the docker container to spawn the server and clients in your local computer. 
+
 
 Clone project
 
@@ -48,23 +72,43 @@ Run a Docker container from the built image
 $ docker compose run -d --name opidi-app -p 8007:8765 -p 5000:5000 web
 ```
 
-Next, you can access the web application via this URL: http://localhost:8007
+Next, access the web application via this URL: http://localhost:8007
 
-Also, you can access interactive Swagger docs for the API at http://localhost:5000/api/1/objects and http://localhost:5000/api/1/generator
+You can also access interactive Swagger docs for the API at http://localhost:5000/api/1/objects and http://localhost:5000/api/1/generator
 
-*Note*: By default, this project is run in a development environment (which uses a self-hosted SQLite database).
+For more information about using the generator backend and enabling slack messaging, please take a look at the [server's readme](server/README.md)
 
-However, you are able to use a local or remote Postgres database in the production environment via the following steps:
+
+*Note*: By default, this project is run in a development environment (which uses a self-hosted SQLite database). To use a local or remote Postgres database in production, you can:
+
 * Set the `FLASK_ENV` environment variable in the `docker-compose.yml` file to `prod`.
 * Set the `DATABASE_URL` environment variable in the `docker-compose.yml` file to the connection string for your local or remote Postgres database.
 * Set the values of the other environment variables that are commented out if you have them.
 * Redo the docker image and container build procedures.
-* Then run the following commands to migrate the Postgres database.
+* Run the following commands to migrate the Postgres database.
 
 ```
 $ docker compose run -d --name opidi-app -p 8007:8765 web pipenv run python manage.py db migrate
 $ docker compose run -d --name opidi-app -p 8007:8765 web pipenv run python manage.py db upgrade
 ```
+
+## Usage
+
+The workflow in the app consists of creating, importing, or viewing an existing protocol. Either of these actions require that you follow up with the following steps:
+
+* Setup the robot deck with labware, pipette, and tip rack choices.
+* Optionally create location sequences to be used in sequence transfer steps.
+* Specify the desired robot operations in steps.
+* Export the underlying protocol object.
+* Simulate the protocol to generate text output with which you may verify that the protocol will run correctly on the robot.
+* Generate the corresponding robot specific protocol file. 
+
+
+### Protocol management
+
+With multiple users interacting with the app the list of protocols can be very quickly cluttered. The OPiDi app asks users to log in to their own space where they can create as many protocols as they wanted in their own sandbox.  Protocol files can then be flagged as verified and shared, with more restricted permissions to avoid accidental updates.
+
+Further, the user can save changes made to a protocol, clone that protocol, or delete it entirely.
 
 ### To Enable Google Authentication
 Follow [this guide](https://developers.google.com/identity/sign-in/web/sign-in) to obtain your Client ID for Google federated authentication.
