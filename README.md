@@ -4,9 +4,7 @@ A "No code" multiuser protocol designer server to program the OT2's liquid handl
 
 ----
 
-Quick link to the [Protocol Generator Docs](https://enginzyme-public.gitlab.io/opidi)
-
-![protocol_app_demo.png.png](client/public/assets/protocol_app_demo.png)
+Quick link to [Protocol Generator Docs](https://enginzyme-public.gitlab.io/opidi)
 
 ## Overview
 
@@ -29,9 +27,12 @@ An instructions json file contains the protocol structure divided in two main se
   * Send Notification
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 0527306 (fix: updated readme. change app name on the frontend's banner and hide the slack channel dropdown.)
+=======
+>>>>>>> b4c4a71 (fix: updated link to the protocol generator doc pages.)
 ## App architecture
 
 ![opg_high_level_architecture.png](server/docs/files/OPG_High_Level_Architecture.jpg)
@@ -88,7 +89,7 @@ For more information about using the generator backend and enabling slack messag
 
 =======
 
-For more information about using the generator backend and enabling slack messaging, please look at the [server's readme](server/README.md)
+For more information about using the generator backend and enabling slack messaging, please take a look at the [server's readme](server/README.md)
 
 
 *Note*: By default, this project is run in a development environment (which uses a self-hosted SQLite database). To use a local or remote Postgres database in production, you can:

@@ -1,5 +1,8 @@
 # Opentrons Protocol Generator
 
+Quick link to [Protocol Generator Docs](https://enginzyme-public.gitlab.io/opidi)
+
+
 The Opentrons Protocol Generator is designed first and foremost to parametrize the generation
 of Opentrons protocol files. The python files are created from a set of instructions in a JSON file
 following a very specific schema.
