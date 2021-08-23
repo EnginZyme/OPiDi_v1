@@ -28,13 +28,6 @@ An instructions json file contains the protocol structure divided in two main se
   * Shake 
   * Send Notification
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 0527306 (fix: updated readme. change app name on the frontend's banner and hide the slack channel dropdown.)
-=======
->>>>>>> b4c4a71 (fix: updated link to the protocol generator doc pages.)
 ## App architecture
 
 ![opg_high_level_architecture.png](server/docs/files/OPG_High_Level_Architecture.jpg)
@@ -82,21 +75,12 @@ $ docker compose run -d --name opidi-app -p 8007:8765 -p 5000:5000 web
 Next, access the web application via this URL: http://localhost:8007
 
 You can also access interactive Swagger docs for the API at http://localhost:5000/api/1/objects and http://localhost:5000/api/1/generator
-<<<<<<< HEAD
 
 For more information about using the generator backend and enabling slack messaging, please take a look at the [server's readme](server/README.md)
 
 
 *Note*: By default, this project is run in a development environment (which uses a self-hosted SQLite database). To use a local or remote Postgres database in production, you can:
 
-=======
-
-For more information about using the generator backend and enabling slack messaging, please take a look at the [server's readme](server/README.md)
-
-
-*Note*: By default, this project is run in a development environment (which uses a self-hosted SQLite database). To use a local or remote Postgres database in production, you can:
-
->>>>>>> 0527306 (fix: updated readme. change app name on the frontend's banner and hide the slack channel dropdown.)
 * Set the `FLASK_ENV` environment variable in the `docker-compose.yml` file to `prod`.
 * Set the `DATABASE_URL` environment variable in the `docker-compose.yml` file to the connection string for your local or remote Postgres database.
 * Set the values of the other environment variables that are commented out if you have them.
