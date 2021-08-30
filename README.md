@@ -63,7 +63,7 @@ $ cd opidi
 Build a Docker image for the project (this step requires you to have Docker setup on your device)
 
 ```
-$ docker compose up
+$ docker compose build
 ```
 
 Run a Docker container from the built image
